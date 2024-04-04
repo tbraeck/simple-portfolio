@@ -1,0 +1,97 @@
+.section {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .developer {
+    background-color: #b8d8ba; /* pastel green */
+  }
+  
+  .designer {
+    background-color: #a7c9ce; /* pastel blue */
+  }
+  
+  .creator {
+    background-color: #f2a28b; /* pastel orange */
+  }
+  
+  .about {
+    background-color: #d2a8d8; /* pastel purple */
+  }
+  
+  .button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: scale(0.95);
+  }
+  
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribute space evenly between cards */
+  }
+  
+  .project-card {
+    width: calc(30% - 30px); /* Calculate width dynamically */
+    margin: 10px; /* Add margin around each card */
+    padding: 20px; /* Add padding inside each card */
+    border: 1px solid #ccc; /* Add a border around each card */
+    border-radius: 8px; /* Add border radius to soften edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px); /* Move card up slightly on hover */
+  }
+  
+  
+  .App-header {
+    background-color: #333; /* Dark gray background color */
+    padding: 20px 0; /* Add padding on top and bottom */
+    text-align: center; /* Center align text */
+  }
+  
+  .App-header h1 {
+    color: #fff; /* White text color */
+    font-size: 2rem; /* Larger font size */
+  }
+  
+  .App-header nav ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .App-header nav ul li {
+    display: inline-block; /* Display items horizontally */
+    margin-right: 20px; /* Add margin between items */
+  }
+  
+  .App-header nav ul li button {
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    color: #fff; /* White text color */
+    font-size: 1rem; /* Font size */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .App-header nav ul li button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light gray background on hover */
+    border-radius: 5px; /* Add border radius on hover */
+  }
+  
