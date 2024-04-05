@@ -27,25 +27,13 @@ function App() {
 
   const handleScroll = () => {
     const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    // Determine scroll direction
-    if (currentScrollTop > lastScrollTop) {
-      // Scroll down
-      setHeaderVisible(false);
-    } else {
-      // Scroll up
-      setHeaderVisible(true);
-    }
-
-    // Update last scroll position
+    setHeaderVisible(currentScrollTop <= lastScrollTop || currentScrollTop < 100);
     setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
+    setShowScrollButton(currentScrollTop > 300); // Show the scroll button when scrolled down 300px
   };
 
   useEffect(() => {
-    // Add scroll event listener
     window.addEventListener('scroll', handleScroll);
-  
-    // Clean up function to remove event listener
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };

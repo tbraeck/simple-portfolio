@@ -24,7 +24,7 @@
   
 
   .section {
-    height: 900px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Align items at the top */
@@ -101,6 +101,11 @@
     align-items: center;
     z-index: 1000; /* Ensure header stays on top */
     transition: top 0.3s; /* Added missing 's' to the transition duration */
+  }
+  
+  /* Ensure header is hidden when scrolled down */
+  .App-header.hidden {
+    top: -100px; /* Adjust this value as needed based on your header height */
   }
   
 
