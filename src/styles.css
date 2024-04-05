@@ -2,14 +2,24 @@
     font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
     font-size: 2.5rem; /* Large font size */
     font-weight: 700; /* Bold font weight */
+    color: #fff; /* White text color */
   }
   
   /* Navigation buttons */
   nav ul li button {
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    color: #fff; /* White text color */
     font-family: 'Roboto', sans-serif; /* Use Roboto font */
     font-size: 1.2rem; /* Larger font size */
-    padding: 15px 30px; /* Increased padding */
-    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  nav ul li button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light gray background on hover */
+    border-radius: 5px; /* Add border radius on hover */
   }
   
 
@@ -26,7 +36,7 @@
   }
   
   .section h2 {
-    margin-top: 20px; /* Adjust the top margin of the section title */
+    margin-top: 150px; /* Adjust the top margin of the section title */
   }
   
   .developer {
@@ -80,10 +90,25 @@
   
   
   .App-header {
-    background-color: #333; /* Dark gray background color */
-    padding: 20px 0; /* Add padding on top and bottom */
-    text-align: center; /* Center align text */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensure header stays on top */
+    transition: top 0.3s; /* Added missing 's' to the transition duration */
   }
+  
+
+  .App-header img {
+    width: 50px; /* Adjust width of the logo */
+    margin-left: 20px; /* Add margin to the left of the logo */
+  }
+  
   
   .App-header h1 {
     color: #fff; /* White text color */

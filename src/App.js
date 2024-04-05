@@ -1,4 +1,4 @@
-import React, { useRef, createContext, useContext, useState } from 'react';
+import React, { useRef, createContext, useContext, useState, useEffect } from 'react';
 import ScrollToTopButton from './ScrollToTopButton';
 import DesignProjectCard from './DesignProjectCard';
 import DeveloperProjectCard from './DeveloperProjectCard';
@@ -18,31 +18,43 @@ const Section = ({ title, children, sectionRef, sectionClass }) => (
 
 function App() {
   const [showScrollButton, setShowScrollButton] = useState(false);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+  const [headerVisible, setHeaderVisible] = useState(true);
   const developerRef = useRef(null);
   const designerRef = useRef(null);
   const creatorRef = useRef(null);
   const aboutRef = useRef(null);
 
   const handleScroll = () => {
-    // Show the scroll button when the user scrolls down a certain amount
-    if (window.pageYOffset > 300) {
-      setShowScrollButton(true);
+    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Determine scroll direction
+    if (currentScrollTop > lastScrollTop) {
+      // Scroll down
+      setHeaderVisible(false);
     } else {
-      setShowScrollButton(false);
+      // Scroll up
+      setHeaderVisible(true);
     }
+
+    // Update last scroll position
+    setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
   };
 
-  // Add a scroll event listener to update the state when the user scrolls
-  React.useEffect(() => {
+  useEffect(() => {
+    // Add scroll event listener
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-
+  
+    // Clean up function to remove event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollTop]);
 
   const scrollToRef = (ref) => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
+
 
   // Sample project data
   const devProjects = [
@@ -131,7 +143,10 @@ function App() {
   ];
   return (
     <div className="App">
-      <header className="App-header">
+      <header className={`App-header ${headerVisible ? 'visible' : 'hidden'}`}>
+        <a href="/">
+          <img src="/LOGO.ico" alt="Logo" />
+        </a>
         <h1 className='headerH1'>Software Engineer Portfolio</h1>
         <nav>
           <ul>
@@ -158,15 +173,15 @@ function App() {
           </Section>
         </ProjectsContext.Provider>
         <Section title="Creator" sectionRef={creatorRef} sectionClass="creator">
-            {creProjects.map((project, index) => (
-                  <CreatorProjectCard key={index} {...project} />
-                ))}        </Section>
+          {creProjects.map((project, index) => (
+            <CreatorProjectCard key={index} {...project} />
+          ))}
+        </Section>
         <Section title="About" sectionRef={aboutRef} sectionClass="about">
           <p>Information about yourself</p>
         </Section>
       </main>
       {showScrollButton && <ScrollToTopButton onClick={() => setShowScrollButton(false)} />}
-
       <footer>
         <p>© 2024 Your Name</p>
       </footer>
