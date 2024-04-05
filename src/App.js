@@ -1,27 +1,12 @@
 import React, { useRef, createContext, useContext, useState } from 'react';
 import ScrollToTopButton from './ScrollToTopButton';
+import DesignProjectCard from './DesignProjectCard';
+import DeveloperProjectCard from './DeveloperProjectCard';
+import CreatorProjectCard from './CreatorProjectCard';
 import './styles.css';
 
 // Define a context for project data
 const ProjectsContext = createContext([]);
-
-// ProjectCard component
-const ProjectCard = ({ title, description, videoUrl, githubUrl }) => (
-  <div className="project-card">
-    <h3>{title}</h3>
-    <p>{description}</p>
-    <iframe
-      width="100%"
-      height="200"
-      src={videoUrl}
-      title="Demo Video"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-    <a href={githubUrl}>GitHub Link</a>
-  </div>
-);
 
 // Section component
 const Section = ({ title, children, sectionRef, sectionClass }) => (
@@ -60,7 +45,7 @@ function App() {
   };
 
   // Sample project data
-  const projects = [
+  const devProjects = [
     {
       title: 'Project 1',
       description: 'Description of Project 1',
@@ -82,10 +67,72 @@ function App() {
     // Add more project objects as needed
   ];
 
+
+  const desProjects = [
+    {
+      title: 'Project 1',
+      description: 'Description of Project 1',
+      imageUrl: 'https://picsum.photos/200',
+      githubUrl: 'https://github.com/yourusername/project1',
+    },
+    {
+      title: 'Project 2',
+      description: 'Description of Project 1',
+      imageUrl: 'https://picsum.photos/200',
+      githubUrl: 'https://github.com/yourusername/project1',
+    },
+    {
+      title: 'Project 3',
+      description: 'Description of Project 1',
+      imageUrl: 'https://picsum.photos/200',
+      githubUrl: 'https://github.com/yourusername/project1',
+    },
+    // Add more project objects as needed
+  ];
+
+  const creProjects = [
+    {
+      title: 'Project 1',
+      description: 'Description of Project 1',
+      medium: 'MEDIUM',
+      imageUrl: 'https://picsum.photos/200',
+    },
+    {
+      title: 'Project 2',
+      description: 'Description of Project 1',
+      medium: 'MEDIUM',
+      imageUrl: 'https://picsum.photos/200',
+    },
+    {
+      title: 'Project 3',
+      description: 'Description of Project 1',
+      medium: 'MEDIUM',
+      imageUrl: 'https://picsum.photos/200',
+    },
+    {
+      title: 'Project 1',
+      description: 'Description of Project 1',
+      medium: 'MEDIUM',
+      imageUrl: 'https://picsum.photos/200',
+    },
+    {
+      title: 'Project 2',
+      description: 'Description of Project 1',
+      medium: 'MEDIUM',
+      imageUrl: 'https://picsum.photos/200',
+    },
+    {
+      title: 'Project 3',
+      description: 'Description of Project 1',
+      medium: 'MEDIUM',
+      imageUrl: 'https://picsum.photos/200',
+    },
+    // Add more project objects as needed
+  ];
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Software Engineer Portfolio</h1>
+        <h1 className='headerH1'>Software Engineer Portfolio</h1>
         <nav>
           <ul>
             <li onClick={() => scrollToRef(developerRef)}><button className="button">Developer</button></li>
@@ -96,21 +143,27 @@ function App() {
         </nav>
       </header>
       <main>
-        <ProjectsContext.Provider value={projects}>
+        <ProjectsContext.Provider value={devProjects}>
           <Section title="Developer" sectionRef={developerRef} sectionClass="developer">
-            {/* Display project cards for developer */}
-            <DeveloperProjects />
-          </Section>
-          <Section title="Designer" sectionRef={designerRef} sectionClass="designer">
-            {/* Add cards for designer projects */}
-          </Section>
-          <Section title="Creator" sectionRef={creatorRef} sectionClass="creator">
-            {/* Add cards for creator projects */}
-          </Section>
-          <Section title="About" sectionRef={aboutRef} sectionClass="about">
-            <p>Information about yourself</p>
+            {devProjects.map((project, index) => (
+              <DeveloperProjectCard key={index} {...project} />
+            ))}
           </Section>
         </ProjectsContext.Provider>
+        <ProjectsContext.Provider value={desProjects}>
+          <Section title="Designer" sectionRef={designerRef} sectionClass="designer">
+            {desProjects.map((project, index) => (
+              <DesignProjectCard key={index} {...project} />
+            ))}
+          </Section>
+        </ProjectsContext.Provider>
+        <Section title="Creator" sectionRef={creatorRef} sectionClass="creator">
+            {creProjects.map((project, index) => (
+                  <CreatorProjectCard key={index} {...project} />
+                ))}        </Section>
+        <Section title="About" sectionRef={aboutRef} sectionClass="about">
+          <p>Information about yourself</p>
+        </Section>
       </main>
       {showScrollButton && <ScrollToTopButton onClick={() => setShowScrollButton(false)} />}
 
@@ -121,17 +174,8 @@ function App() {
   );
 }
 
-// DeveloperProjects component to display project cards
-const DeveloperProjects = () => {
-  const projects = useContext(ProjectsContext);
-  
-  return (
-    <>
-      {projects.map((project, index) => (
-        <ProjectCard key={index} {...project} />
-      ))}
-    </>
-  );
-};
+
+
+
 
 export default App;

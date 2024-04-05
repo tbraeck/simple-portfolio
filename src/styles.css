@@ -1,12 +1,32 @@
-.section {
+.headerH1 {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    font-size: 2.5rem; /* Large font size */
+    font-weight: 700; /* Bold font weight */
+  }
+  
+  /* Navigation buttons */
+  nav ul li button {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    font-size: 1.2rem; /* Larger font size */
+    padding: 15px 30px; /* Increased padding */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+
+  .section {
     height: 900px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Align items at the top */
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
     transition: all 0.3s ease;
+    margin-bottom: 40px; /* Add space between sections */
+  }
+  
+  .section h2 {
+    margin-top: 20px; /* Adjust the top margin of the section title */
   }
   
   .developer {

@@ -1,0 +1,41 @@
+/* DesignProjectCard.css */
+
+.design-project-card {
+    width: 300px; /* Card width */
+    background-color: #f9f9f9; /* Background color */
+    border: 1px solid #ddd; /* Border */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px; /* Margin around the card */
+    overflow: hidden; /* Hide overflowing content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  }
+  
+  .design-project-card img {
+    width: 100%; /* Image width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .design-project-card .content {
+    padding: 20px; /* Padding inside the card */
+  }
+  
+  .design-project-card h3 {
+    margin-top: 0; /* Remove top margin for heading */
+  }
+  
+  .design-project-card p {
+    margin-bottom: 15px; /* Add bottom margin for paragraph */
+  }
+  
+  .design-project-card .links a {
+    display: inline-block; /* Display links inline */
+    margin-right: 10px; /* Add right margin between links */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Link color */
+    font-weight: bold; /* Bold font weight */
+  }
+  
+  .design-project-card .links a:hover {
+    color: #000; /* Darker color on hover */
+  }
+  
