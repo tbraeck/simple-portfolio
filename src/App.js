@@ -1,21 +1,32 @@
-import React, { useRef, createContext, useContext, useState, useEffect } from 'react';
+import React, { useRef, createContext, useState, useEffect } from 'react';
 import ScrollToTopButton from './ScrollToTopButton';
 import DesignProjectCard from './DesignProjectCard';
 import DeveloperProjectCard from './DeveloperProjectCard';
 import CreatorProjectCard from './CreatorProjectCard';
 import AboutSection from './AboutSection';
 import { AboutProvider } from './AboutContext';
+import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 import './styles.css';
+import AnimatedSection from './AnimatedSection';
+import AnimationVideoS1 from './AnimationVideoS1'; // Import the AnimationVideoS1 component
 
 // Define a context for project data
 const ProjectsContext = createContext([]);
 
 // Section component
 const Section = ({ title, children, sectionRef, sectionClass }) => (
-  <section ref={sectionRef} className={`section ${sectionClass}`}>
+  <motion.section // Wrap the section with motion component
+    initial={{ opacity: 0 }} // Set initial animation
+    animate={{ opacity: 1 }} // Set animate animation
+    exit={{ opacity: 0 }} // Set exit animation
+    ref={sectionRef}
+    className={`section ${sectionClass}`}
+  >
     <h2>{title}</h2>
-    <div className="project-cards">{children}</div>
-  </section>
+    <AnimatePresence>
+      <div className="project-cards">{children}</div>
+    </AnimatePresence>
+  </motion.section>
 );
 
 function App() {
@@ -150,6 +161,9 @@ function App() {
       <main>
         <ProjectsContext.Provider value={devProjects}>
           <Section title="Developer" sectionRef={developerRef} sectionClass="developer">
+            {/* Add AnimationVideoS1 component */}
+            <AnimationVideoS1 />
+            {/* Render DeveloperProjectCard components */}
             {devProjects.map((project, index) => (
               <DeveloperProjectCard key={index} {...project} />
             ))}
@@ -157,19 +171,22 @@ function App() {
         </ProjectsContext.Provider>
         <ProjectsContext.Provider value={desProjects}>
           <Section title="Designer" sectionRef={designerRef} sectionClass="designer">
+            {/* Render DesignProjectCard components */}
             {desProjects.map((project, index) => (
               <DesignProjectCard key={index} {...project} />
             ))}
           </Section>
         </ProjectsContext.Provider>
         <Section title="Creator" sectionRef={creatorRef} sectionClass="creator">
+          {/* Render CreatorProjectCard components */}
           {creProjects.map((project, index) => (
             <CreatorProjectCard key={index} {...project} />
           ))}
         </Section>
         <Section title="About" sectionRef={aboutRef} sectionClass="about">
           <AboutProvider>
-              <AboutSection />
+            {/* Render AboutSection */}
+            <AboutSection />
           </AboutProvider>
         </Section>
       </main>
@@ -180,9 +197,5 @@ function App() {
     </div>
   );
 }
-
-
-
-
 
 export default App;
