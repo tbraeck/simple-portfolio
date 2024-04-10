@@ -3,6 +3,8 @@ import ScrollToTopButton from './ScrollToTopButton';
 import DesignProjectCard from './DesignProjectCard';
 import DeveloperProjectCard from './DeveloperProjectCard';
 import CreatorProjectCard from './CreatorProjectCard';
+import AboutSection from './AboutSection';
+import { AboutProvider } from './AboutContext';
 import './styles.css';
 
 // Define a context for project data
@@ -166,7 +168,9 @@ function App() {
           ))}
         </Section>
         <Section title="About" sectionRef={aboutRef} sectionClass="about">
-          <p>Information about yourself</p>
+          <AboutProvider>
+              <AboutSection />
+          </AboutProvider>
         </Section>
       </main>
       {showScrollButton && <ScrollToTopButton onClick={() => setShowScrollButton(false)} />}
