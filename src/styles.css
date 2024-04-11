@@ -75,13 +75,26 @@
   }
   
   .project-card {
-    width: calc(30% - 30px); /* Calculate width dynamically */
-    margin: 10px; /* Add margin around each card */
-    padding: 20px; /* Add padding inside each card */
-    border: 1px solid #ccc; /* Add a border around each card */
-    border-radius: 8px; /* Add border radius to soften edges */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
-    transition: all 0.3s ease; /* Smooth transition on hover */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: 80%; /* Adjust the width as needed */
+  }
+  
+  .project-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .project-card video {
+    width: 100%;
+    height: auto;
   }
   
   .project-card:hover {

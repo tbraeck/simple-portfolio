@@ -1,22 +1,18 @@
-// DeveloperProjectCard.js
+// DeveloperProjectCard.js, DesignProjectCard.js, CreatorProjectCard.js
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const DeveloperProjectCard = ({ title, description, videoUrl, githubUrl }) => (
-  <div className="project-card">
-    <h3>{title}</h3>
-    <p>{description}</p>
-    <iframe
-      width="100%"
-      height="200"
-      src={videoUrl}
-      title="Demo Video"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-    <a href={githubUrl}>GitHub Link</a>
-  </div>
-);
+const DeveloperProjectCard = ({ title, description, videoUrl, githubUrl }) => {
+  return (
+    <div className="project-card">
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <video src={videoUrl} controls></video>
+      <a href={githubUrl}>GitHub Link</a>
+      <Link to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`}>View Details</Link> {/* Link to project detail page */}
+    </div>
+  );
+};
 
 export default DeveloperProjectCard;
