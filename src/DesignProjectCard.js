@@ -6,11 +6,17 @@ import { Link } from 'react-router-dom';
 const DesignProjectCard = ({ title, description, videoUrl, githubUrl }) => {
   return (
     <div className="project-card">
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <video src={videoUrl} controls></video>
-      <a href={githubUrl}>GitHub Link</a>
-      <Link to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`}>View Details</Link> {/* Link to project detail page */}
+      <h3 className="project-title">{title}</h3>
+      <p className="project-description">{description}</p>
+      <div className="video-container">
+        <video className="project-video" src={videoUrl} controls></video>
+      </div>
+      <div className="project-links">
+        <a className="github-link" href={githubUrl}>GitHub</a>
+        <Link className="details-link" to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`}>
+          View Details
+        </Link>
+      </div>
     </div>
   );
 };
