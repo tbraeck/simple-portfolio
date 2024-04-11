@@ -1,7 +1,6 @@
-// DeveloperProjectCard.js, DesignProjectCard.js, CreatorProjectCard.js
-
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './DesignProjectCard.css';
 
 const DesignProjectCard = ({ title, description, videoUrl, githubUrl }) => {
   return (
