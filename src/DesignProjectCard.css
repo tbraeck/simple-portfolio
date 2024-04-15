@@ -1,27 +1,31 @@
 .design-project-card {
   position: relative; /* Positioning context for absolute positioning */
   width: 100%; /* Set card width to 100% */
-  max-width: 300px; /* Limit maximum width */
+  max-width: 400px; /* Limit maximum width */
   background-color: #fff; /* Background color */
   border: 1px solid #ccc; /* Border */
   border-radius: 8px; /* Rounded corners */
-  margin: 20px; /* Margin around the card */
+  margin: 10px; /* Margin around the card */
   overflow: hidden; /* Hide overflowing content */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light box shadow for depth */
-  transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for box-shadow and transform */
+  color: #333;
 }
 
 .design-project-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  background-color: #58fbdd; /* Change background color on hover */
+  color: rgb(216, 38, 107);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.05); /* Grow bigger on hover */
 }
 
 .design-project-card img {
-  width: 100%; /* Image width */
+  width: 80%; /* Image width */
   height: auto; /* Maintain aspect ratio */
 }
 
 .design-project-card .content {
-  padding: 20px; /* Padding inside the card */
+  padding: 30px; /* Increase padding inside the card */
 }
 
 .design-project-card h3 {
@@ -29,13 +33,13 @@
 }
 
 .design-project-card p {
-  margin-bottom: 10px; /* Reduced bottom margin for paragraph */
+  margin-bottom: 20px; /* Increase bottom margin for paragraph */
 }
 
 .design-project-card .links {
   display: flex; /* Use flexbox layout */
   justify-content: space-between; /* Distribute links evenly */
-  padding: 0 20px 20px; /* Add padding to the bottom of links */
+  padding: 20px; /* Add padding around the links */
 }
 
 .design-project-card .links a {
