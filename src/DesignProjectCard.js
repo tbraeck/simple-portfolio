@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './DesignProjectCard.css';
+import './DesignProjectCard.css'; // Import CSS file
 
 const DesignProjectCard = ({ title, description, videoUrl, githubUrl }) => {
   return (
-    <div className="project-card">
-      <h3 className="project-title">{title}</h3>
-      <p className="project-description">{description}</p>
+    <div className="design-project-card"> {/* Ensure the class name matches */}
+      <h3>{title}</h3>
+      <p>{description}</p>
       <div className="video-container">
         <video className="project-video" src={videoUrl} controls></video>
       </div>
