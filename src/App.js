@@ -78,19 +78,19 @@ function App() {
     {
       title: 'Project 1',
       description: 'Description of Project 1',
-      imageUrl: 'https://picsum.photos/200',
+      imageUrl: 'https://picsum.photos/200/300',
       githubUrl: 'https://github.com/yourusername/project1',
     },
     {
       title: 'Project 2',
       description: 'Description of Project 1',
-      imageUrl: 'https://picsum.photos/200',
+      imageUrl: 'https://picsum.photos/200/300',
       githubUrl: 'https://github.com/yourusername/project1',
     },
     {
       title: 'Project 3',
       description: 'Description of Project 1',
-      imageUrl: 'https://picsum.photos/200',
+      imageUrl: 'https://picsum.photos/200/300',
       githubUrl: 'https://github.com/yourusername/project1',
     },
     // Add more project objects as needed
