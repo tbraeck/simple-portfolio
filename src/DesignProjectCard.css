@@ -1,54 +1,65 @@
 .design-project-card {
-  position: relative; /* Positioning context for absolute positioning */
-  width: 100%; /* Set card width to 100% */
-  max-width: 400px; /* Limit maximum width */
-  background-color: #fff; /* Background color */
-  border: 1px solid #ccc; /* Border */
-  border-radius: 8px; /* Rounded corners */
-  margin: 10px; /* Margin around the card */
-  overflow: hidden; /* Hide overflowing content */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light box shadow for depth */
-  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for box-shadow and transform */
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .design-project-card:hover {
-  background-color: #58fbdd; /* Change background color on hover */
-  color: rgb(216, 38, 107);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
-  transform: scale(1.05); /* Grow bigger on hover */
+  background-color: #f9b685;
+  color: rgb(254, 254, 254);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.55);
+  z-index: 5;
 }
 
 .design-project-card img {
-  width: 80%; /* Image width */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: auto;
 }
 
 .design-project-card .content {
   padding: 30px; /* Increase padding inside the card */
+  text-align: center; /* Center text content */
 }
 
 .design-project-card h3 {
-  margin-top: 0; /* Remove top margin for heading */
+  margin-top: 0;
 }
 
 .design-project-card p {
-  margin-bottom: 20px; /* Increase bottom margin for paragraph */
+  margin-bottom: 20px;
 }
 
-.design-project-card .links {
-  display: flex; /* Use flexbox layout */
-  justify-content: space-between; /* Distribute links evenly */
-  padding: 20px; /* Add padding around the links */
+.design-project-card .video-container {
+  width: 350px;
+  padding: 20px; 
 }
 
-.design-project-card .links a {
-  text-decoration: none; /* Remove underline */
-  color: #333; /* Link color */
-  font-weight: bold; /* Bold font weight */
-  transition: color 0.3s ease; /* Smooth transition for color */
+.design-project-card .project-links {
+  display: flex;
+  justify-content: space-between; /* Spread links to left and right */
+  width: calc(100% - 40px); /* Ensure links span the full width with padding from edges */
+  padding: 20px; /* Add padding from the edges */
 }
 
-.design-project-card .links a:hover {
-  color: #000; /* Darker color on hover */
+.design-project-card .project-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.design-project-card .project-links a:hover {
+  color: #f9f4f4;
 }

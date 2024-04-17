@@ -1,19 +1,18 @@
-// DeveloperProjectCard.js, DesignProjectCard.js, CreatorProjectCard.js
-
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './DeveloperProjectCard.css'; // Import CSS file for the component
 
 const DeveloperProjectCard = ({ title, description, videoUrl, githubUrl }) => {
   return (
-    <div className="project-card">
-      <h3 className="project-title">{title}</h3>
-      <p className="project-description">{description}</p>
-      <div className="video-container">
-        <video className="project-video" src={videoUrl} controls></video>
+    <div className="developer-project-card">
+      <h3 className="developer-project-title">{title}</h3>
+      <p className="developer-project-description">{description}</p>
+      <div className="developer-video-container">
+        <video className="developer-project-video" src={videoUrl} controls></video>
       </div>
-      <div className="project-links">
-        <a className="github-link" href={githubUrl}>GitHub</a>
-        <Link className="details-link" to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`}>
+      <div className="developer-project-links">
+        <a className="developer-github-link" href={githubUrl}>GitHub</a>
+        <Link className="developer-details-link" to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`}>
           View Details
         </Link>
       </div>
