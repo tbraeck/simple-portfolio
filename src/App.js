@@ -50,7 +50,7 @@ function App() {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
 
-
+    
   // Sample project data
   const devProjects = [
     {
