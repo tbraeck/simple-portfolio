@@ -5,6 +5,9 @@ import DeveloperProjectCard from './DeveloperProjectCard';
 import CreatorProjectCard from './CreatorProjectCard';
 import AboutSection from './AboutSection';
 import { AboutProvider } from './AboutContext';
+import ProjectDetailPage from './ProjectDetailPage';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 // import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 import './styles.css';
 import AnimationVideoS1 from './AnimationVideoS1'; // Import the AnimationVideoS1 component
@@ -50,7 +53,7 @@ function App() {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
 
-    
+
   // Sample project data
   const devProjects = [
     {
@@ -142,7 +145,7 @@ function App() {
         <a href="/">
           <img src="/LOGO.ico" alt="Logo" />
         </a>
-        <h1 className='headerH1'>Software Engineer Portfolio</h1>
+        <h1 className='headerH1'>TATE BRAECKEL</h1>
         <nav>
           <ul>
             <li onClick={() => scrollToRef(developerRef)}><button className="button">Developer</button></li>
@@ -153,6 +156,11 @@ function App() {
         </nav>
       </header>
       <main>
+      <Router>
+          {/* <Route exact path="/" component={Home} /> */}
+          {/* <Route exact path="/projects" component={Projects} /> */}
+          <Route exact path="/projects/:projectId" component={ProjectDetailPage} />
+      </Router>
         <AnimationVideoS1 /> 
         <ProjectsContext.Provider value={devProjects}>
           <Section title="Developer" sectionRef={developerRef} sectionClass="developer">
