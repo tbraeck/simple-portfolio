@@ -6,7 +6,7 @@ import CreatorProjectCard from './CreatorProjectCard';
 import AboutSection from './AboutSection';
 import { AboutProvider } from './AboutContext';
 import ProjectDetailPage from './ProjectDetailPage';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 // import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 import './styles.css';
@@ -156,11 +156,11 @@ function App() {
         </nav>
       </header>
       <main>
-      <Router>
+      {/* <Router> */}
           {/* <Route exact path="/" component={Home} /> */}
           {/* <Route exact path="/projects" component={Projects} /> */}
-          <Route exact path="/projects/:projectId" component={ProjectDetailPage} />
-      </Router>
+          {/* <Route exact path="/projects/:projectId" component={ProjectDetailPage} />
+      </Router> */}
         <AnimationVideoS1 /> 
         <ProjectsContext.Provider value={devProjects}>
           <Section title="Developer" sectionRef={developerRef} sectionClass="developer">
