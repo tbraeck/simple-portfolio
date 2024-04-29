@@ -48,7 +48,9 @@ nav ul li button:hover {
 }
 
 .developer {
-  background-color: #b8d8ba; /* pastel green */
+  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3AwdXZybHk3ZzE5ZDl3dGk2ZW93enFrcnJlNmQwemF6NTc1b3BvdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2XB76CaWPggiNW/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .designer {
