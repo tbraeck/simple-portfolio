@@ -54,11 +54,14 @@ nav ul li button:hover {
 }
 
 .designer {
-  background-color: #a7c9ce; /* pastel blue */
-}
+  background-image: url("https://i.pinimg.com/originals/74/43/a3/7443a31b6a19e5630b94a6538ff9bdd1.gif");
+  background-repeat: no-repeat;
+  background-size: cover;}
 
 .creator {
-  background-color: #f2a28b; /* pastel orange */
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20231002/pngtree-vibrant-watercolor-background-texture-in-abstract-art-image_13605172.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about {
