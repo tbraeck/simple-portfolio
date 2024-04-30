@@ -48,18 +48,18 @@ nav ul li button:hover {
 }
 
 .developer {
-  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3AwdXZybHk3ZzE5ZDl3dGk2ZW93enFrcnJlNmQwemF6NTc1b3BvdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2XB76CaWPggiNW/giphy.gif");
+  background-image: url("/public/water_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .designer {
-  background-image: url("/public/design-background.png");
+  background-image: url("/public/blue_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;}
 
 .creator {
-  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20231002/pngtree-vibrant-watercolor-background-texture-in-abstract-art-image_13605172.png");
+  background-image: url("/public/pink_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
