@@ -189,7 +189,7 @@ function App() {
       </main>
       {showScrollButton && <ScrollToTopButton onClick={() => setShowScrollButton(false)} />}
       <footer>
-        <p>© 2024 Your Name</p>
+        <p style={{paddingLeft: "30px"}}>© 2024 Tate Braeckel</p>
       </footer>
     </div>
   );

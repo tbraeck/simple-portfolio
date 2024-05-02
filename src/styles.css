@@ -25,15 +25,16 @@ nav ul li button:hover {
 .section {
   height: 1000px;
   display: flex;
+  justify-content: center; 
   flex-direction: column;
-  justify-content: flex-start; /* Align items at the top */
+  justify-content: center; /* Align items at the top */
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
   transition: all 0.3s ease;
   padding-bottom: 30px;
   margin-bottom: 30px; /* Add space between sections */
-  margin-top: 20px; /* Adjust top margin */
+  margin-top: 0px; /* Adjust top margin */
 }
 
 /* Adjust top margin for sections other than the developer section */
@@ -44,7 +45,7 @@ nav ul li button:hover {
 }
 
 .section h2 {
-  margin-top: 150px; /* Adjust the top margin of the section title */
+  margin-top: 50px; /* Adjust the top margin of the section title */
 }
 
 .developer {
