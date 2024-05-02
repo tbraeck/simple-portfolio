@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './DesignProjectCard.css'; // Import CSS file
 
-const DesignProjectCard = ({ title, description, videoUrl, githubUrl }) => {
+const DesignProjectCard = ({ projectId, title, description, videoUrl, githubUrl }) => {
   const [hovered, setHovered] = useState(false);
-  
+
   const getRandomColor = () => {
     const colors = ['#f9b685', '#8ac6d1', '#e4a9a1', '#b8b8b8', '#f2d49b']; // Add more colors if needed
     return colors[Math.floor(Math.random() * colors.length)];
@@ -23,7 +23,8 @@ const DesignProjectCard = ({ title, description, videoUrl, githubUrl }) => {
       </div>
       <div className="project-links">
         <a className="github-link" href={githubUrl}>GitHub</a>
-        <Link className="details-link" to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`}>
+        {/* Use Link to navigate to the project detail page */}
+        <Link className="details-link" to={`/projects/${projectId}`}>
           View Details
         </Link>
       </div>
