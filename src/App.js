@@ -6,17 +6,13 @@ import CreatorProjectCard from './CreatorProjectCard';
 import AboutSection from './AboutSection';
 import { AboutProvider } from './AboutContext';
 import ProjectDetailPage from './ProjectDetailPage';
-// import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 // import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 import './styles.css';
 import AnimationVideoS1 from './AnimationVideoS1'; // Import the AnimationVideoS1 component
 
-// Define a context for project data
 const ProjectsContext = createContext([]);
-
-// Section component
-
 
 const Section = ({ title, children, sectionRef, sectionClass }) => (
   <section ref={sectionRef} className={`section ${sectionClass}`}>
@@ -61,18 +57,21 @@ function App() {
       description: 'Description of Project 1',
       videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_1',
       githubUrl: 'https://github.com/yourusername/project1',
+      projectId: 1
     },
     {
       title: 'Project 2',
       description: 'Description of Project 2',
       videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_2',
       githubUrl: 'https://github.com/yourusername/project2',
+      projectId: 2
     },
     {
       title: 'Project 3',
       description: 'Description of Project 3',
       videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_3',
       githubUrl: 'https://github.com/yourusername/project3',
+      projectId: 3
     },
     // Add more project objects as needed
   ];
@@ -83,18 +82,21 @@ function App() {
       description: 'Description of Project 1',
       imageUrl: 'https://picsum.photos/200/300',
       githubUrl: 'https://github.com/yourusername/project1',
+      projectId: 4
     },
     {
       title: 'Project 2',
       description: 'Description of Project 1',
       imageUrl: 'https://picsum.photos/200/300',
       githubUrl: 'https://github.com/yourusername/project1',
+      projectId: 5
     },
     {
       title: 'Project 3',
       description: 'Description of Project 1',
       imageUrl: 'https://picsum.photos/200/300',
       githubUrl: 'https://github.com/yourusername/project1',
+      projectId: 6
     },
     // Add more project objects as needed
   ];
@@ -105,36 +107,42 @@ function App() {
       description: 'Description of Project 1',
       medium: 'MEDIUM',
       imageUrl: 'https://picsum.photos/200',
+      projectId: 7
     },
     {
       title: 'Project 2',
       description: 'Description of Project 1',
       medium: 'MEDIUM',
       imageUrl: 'https://picsum.photos/200',
+      projectId: 8
     },
     {
       title: 'Project 3',
       description: 'Description of Project 1',
       medium: 'MEDIUM',
       imageUrl: 'https://picsum.photos/200',
+      projectId: 9
     },
     {
       title: 'Project 1',
       description: 'Description of Project 1',
       medium: 'MEDIUM',
       imageUrl: 'https://picsum.photos/200',
+      projectId: 10
     },
     {
       title: 'Project 2',
       description: 'Description of Project 1',
       medium: 'MEDIUM',
       imageUrl: 'https://picsum.photos/200',
+      projectId: 11
     },
     {
       title: 'Project 3',
       description: 'Description of Project 1',
       medium: 'MEDIUM',
       imageUrl: 'https://picsum.photos/200',
+      projectId: 12
     },
     // Add more project objects as needed
   ];
@@ -156,11 +164,11 @@ function App() {
         </nav>
       </header>
       <main>
-      {/* <Router> */}
-          {/* <Route exact path="/" component={Home} /> */}
-          {/* <Route exact path="/projects" component={Projects} /> */}
-          {/* <Route exact path="/projects/:projectId" component={ProjectDetailPage} />
-      </Router> */}
+      <Routes> 
+          <Route exact path="/"  /> 
+           {/* <Route exact path="/projects" component={Projects} />  */}
+           <Route exact path="/projects/:projectId" component={ProjectDetailPage} />
+      </Routes>
         <AnimationVideoS1 /> 
         <ProjectsContext.Provider value={devProjects}>
           <Section title="Developer" sectionRef={developerRef} sectionClass="developer">
