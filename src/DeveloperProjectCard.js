@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './DeveloperProjectCard.css'; // Import CSS file for the component
 
-const DeveloperProjectCard = ({ title, description, videoUrl, githubUrl }) => {
+const DeveloperProjectCard = ({ title, description, videoUrl, githubUrl, projectId }) => {
   return (
     <div className="developer-project-card">
       <h3 className="developer-project-title">{title}</h3>
@@ -12,7 +12,7 @@ const DeveloperProjectCard = ({ title, description, videoUrl, githubUrl }) => {
       </div>
       <div className="developer-project-links">
         <a className="developer-github-link" href={githubUrl}>GitHub</a>
-        <Link className="developer-details-link" to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`}>
+        <Link className="details-link" to={`/projects/${projectId}`}>
           View Details
         </Link>
       </div>

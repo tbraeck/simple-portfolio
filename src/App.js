@@ -167,7 +167,9 @@ function App() {
       <Routes> 
           <Route exact path="/"  /> 
            {/* <Route exact path="/projects" component={Projects} />  */}
-           <Route path="/projects/:projectId" component={ProjectDetailPage} />
+           {/* <Route path="/projects/:projectId" component={ProjectDetailPage} /> */}
+           <Route path="/projects/:projectId" component={DesignProjectCard} />
+
       </Routes>
         <AnimationVideoS1 /> 
         <ProjectsContext.Provider value={devProjects}>

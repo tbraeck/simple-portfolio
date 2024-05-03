@@ -4,7 +4,7 @@ import { useParams, Link } from 'react-router-dom'; // Import Link from react-ro
 const ProjectDetailPage = () => {
   const { projectId } = useParams(); // Assuming you are using React Router for navigation
   const [project, setProject] = useState(null);
-
+console.log(projectId)
   useEffect(() => {
     // Fetch project details based on the projectId
     // Example fetch request:
@@ -31,7 +31,7 @@ const ProjectDetailPage = () => {
 
   return (
     <div className="project-detail">
-      <h2>Project Detail Page</h2>
+      <h2>{project.title} Detail Page</h2>
       <p>Project ID: {projectId}</p>
       <h1>{project.title}</h1>
       <p>{project.description}</p>
