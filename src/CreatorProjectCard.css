@@ -39,10 +39,10 @@
 }
 
 .creator-project-card .overlay h3 {
-  margin-top: 0; /* Remove top margin for heading */
+  margin-top: 20px; /* Remove top margin for heading */
   margin-bottom: 10px; /* Add bottom margin for heading */
 }
 
 .creator-project-card .overlay p {
-  margin-bottom: 0; /* Remove bottom margin for paragraph */
+  margin-bottom: 30px; /* Remove bottom margin for paragraph */
 }

@@ -66,6 +66,7 @@ nav ul li button:hover {
 }
 
 .about {
+  margin-top: 0px;
   padding: 0px;
   background-color: #d2a8d8; 
 }

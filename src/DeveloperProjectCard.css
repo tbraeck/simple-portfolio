@@ -1,56 +1,54 @@
 .developer-project-card {
-    background-color: #f8f9fa;
-  
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 300px;
-    margin: 50px;
-    transition: transform 0.3s ease;
-  }
-  
-  .developer-project-card:hover {
-    transform: translateY(155px);
-  }
-  
-  .developer-project-title {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .developer-project-description {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .developer-video-container {
-    width: 100%;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-  
-  .developer-project-video {
-    width: 100%;
-    height: auto;
-  }
-  
-  .developer-project-links {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .developer-github-link,
-  .developer-details-link {
-    color: #007bff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
-  }
-  
-  .developer-github-link:hover,
-  .developer-details-link:hover {
-    color: #0056b3;
-  }
-  
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  margin: 50px;
+  transition: transform 0.3s ease;
+}
+
+.developer-project-card:hover {
+  transform: translateY(-120px); /* Move the card up by 20px on hover */
+}
+
+.developer-project-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.developer-project-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.developer-video-container {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.developer-project-video {
+  width: 100%;
+  height: auto;
+}
+
+.developer-project-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.developer-github-link,
+.developer-details-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.developer-github-link:hover,
+.developer-details-link:hover {
+  color: #0056b3;
+}

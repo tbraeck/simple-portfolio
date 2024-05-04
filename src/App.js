@@ -173,25 +173,25 @@ function App() {
       </Routes>
         <AnimationVideoS1 /> 
         <ProjectsContext.Provider value={devProjects}>
-          <Section title="Developer" sectionRef={developerRef} sectionClass="developer">
+          <Section title="DEVELOPER" sectionRef={developerRef} sectionClass="developer">
             {devProjects.map((project, index) => (
               <DeveloperProjectCard key={index} {...project} />
             ))}
           </Section>
         </ProjectsContext.Provider>
         <ProjectsContext.Provider value={desProjects}>
-          <Section title="Designer" sectionRef={designerRef} sectionClass="designer">
+          <Section title="DESIGNER" sectionRef={designerRef} sectionClass="designer">
             {desProjects.map((project, index) => (
               <DesignProjectCard key={index} {...project} />
             ))}
           </Section>
         </ProjectsContext.Provider>
-        <Section title="Creator" sectionRef={creatorRef} sectionClass="creator">
+        <Section title="CREATOR" sectionRef={creatorRef} sectionClass="creator">
           {creProjects.map((project, index) => (
             <CreatorProjectCard key={index} {...project} />
           ))}
         </Section>
-        <Section title="About" sectionRef={aboutRef} sectionClass="about">
+        <Section  sectionRef={aboutRef} sectionClass="about">
           <AboutProvider>
             <AboutSection />
           </AboutProvider>
