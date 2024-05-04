@@ -154,13 +154,24 @@ function App() {
         <a href="/">
           <img src="/TNT_LOGO.png" style={{height: "70px", width: "auto", marginLeft: "30px"}} alt="Logo" />
         </a>
-        <h1 className='headerH1'>TATE BRAECKEL: DEVELOPER ~ DESIGNER ~ CREATIVE</h1>
+        <h1 className='headerH1' 
+        style={{
+          fontFamily: "Changa, sans-serif",
+          fontOpticalSizing: "auto",
+          fontWeight: 200,
+          color: "#00cc99",
+          fontStyle: "normal",
+          fontSize: "40px",
+        }}
+        >
+          TATE BRAECKEL
+        </h1>
         <nav>
           <ul>
-            <li onClick={() => scrollToRef(developerRef)}><button className="button">Developer</button></li>
-            <li onClick={() => scrollToRef(designerRef)}><button className="button">Designer</button></li>
-            <li onClick={() => scrollToRef(creatorRef)}><button className="button">Creator</button></li>
-            <li onClick={() => scrollToRef(aboutRef)}><button className="button">About</button></li>
+          <li onClick={() => scrollToRef(developerRef)}><button className="button" style={{ fontSize: "28px" }}>Developer</button></li>
+            <li onClick={() => scrollToRef(designerRef)}><button className="button" style={{ fontSize: "28px" }}>Designer</button></li>
+            <li onClick={() => scrollToRef(creatorRef)}><button className="button" style={{ fontSize: "28px" }}>Creator</button></li>
+            <li onClick={() => scrollToRef(aboutRef)}><button className="button" style={{ fontSize: "28px" }}>About</button></li>
           </ul>
         </nav>
       </header>

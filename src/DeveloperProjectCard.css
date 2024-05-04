@@ -1,5 +1,5 @@
 .developer-project-card {
-  background-color: #f8f9fa;
+  background-color: #f8f9fa; /* Initial background color */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -9,8 +9,12 @@
 }
 
 .developer-project-card:hover {
+  background-color: rgba(248, 249, 250, 0.7); /* Change the opacity on hover */
   transform: translateY(-100px); /* Move the card up by 20px on hover */
 }
+
+/* Other styles remain the same */
+
 
 .developer-project-title {
   font-size: 24px;
