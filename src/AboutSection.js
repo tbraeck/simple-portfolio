@@ -9,10 +9,7 @@ const AboutSection = () => {
 
   return (
     <div className="about-content">
-      <div>
-        {/* <h2 className="about-title">{aboutData.title}</h2> */}
-        <p className="about-description">{aboutData.description}</p>
-      </div>
+          <p className="about-description">{aboutData.description}</p>
       <div className="tech-skills">
         <h3 className="tech-skills-title">Tech Skills</h3>
         <ul className="tech-skills-list">

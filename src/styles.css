@@ -33,9 +33,22 @@ nav ul li button:hover {
   color: #fff;
   transition: all 0.3s ease;
   padding-bottom: 30px;
-  margin-bottom: 30px; /* Add space between sections */
+  margin-bottom: 10px; /* Add space between sections */
   margin-top: 0px; /* Adjust top margin */
 }
+.section-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Add margin to separate the title from the project cards */
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right; /* Align the project cards to the right */
+  margin-top: 20px; /* Add margin to separate the project cards from the title */
+}
+
 
 /* Adjust top margin for sections other than the developer section */
 .designer,

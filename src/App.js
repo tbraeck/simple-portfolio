@@ -16,11 +16,12 @@ const ProjectsContext = createContext([]);
 
 const Section = ({ title, children, sectionRef, sectionClass }) => (
   <section ref={sectionRef} className={`section ${sectionClass}`}>
-    <h2>{title}</h2>  
+    <div className="section-header">
+      <h2>{title}</h2>
+    </div>
     <div className="project-cards">{children}</div>
   </section>
 );
-
 
 function App() {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -175,10 +176,10 @@ function App() {
         <ProjectsContext.Provider value={devProjects}>
           <Section sectionRef={developerRef} sectionClass="developer">
           <h1 style={{   
-      padding: "30px 0 0 30px",
+      // padding: "30px 0 0 30px",
       fontFamily: "Changa, sans-serif",
       fontOpticalSizing: "auto",
-      fontWeight: 400,
+      fontWeight: 350,
       color: "#8ecae6",
       fontStyle: "normal",
       fontSize: "100px",
@@ -195,10 +196,10 @@ function App() {
         <ProjectsContext.Provider value={desProjects}>
   <Section sectionRef={designerRef} sectionClass="designer">
     <h1 style={{   
-      padding: "30px 0 0 30px",
+      // padding: "30px 0 0 30px",
       fontFamily: "Changa, sans-serif",
       fontOpticalSizing: "auto",
-      fontWeight: 400,
+      fontWeight: 350,
       color: "#b56576",
       fontStyle: "normal",
       fontSize: "100px",
@@ -214,14 +215,15 @@ function App() {
 </ProjectsContext.Provider>
         <Section  sectionRef={creatorRef} sectionClass="creator">
         <h1 style={{   
-      padding: "30px 0 0 30px",
+      // padding: "0px 0 0 0px",
       fontFamily: "Changa, sans-serif",
       fontOpticalSizing: "auto",
-      fontWeight: 400,
+      fontWeight: 350,
       color: "#0c61d8",
       fontStyle: "normal",
       fontSize: "100px",
-      opacity: "0.75"
+      opacity: "0.75",
+      zIndex: "10"
     }}
     >
       CREATOR
@@ -232,14 +234,15 @@ function App() {
         </Section>
         <Section sectionRef={aboutRef} sectionClass="about">
   <h1 style={{   
-    padding: "30px 0 0 30px",
+    // padding: "30px 0 0 30px",
     fontFamily: "Changa, sans-serif",
     fontOpticalSizing: "auto",
-    fontWeight: 400,
+    fontWeight: 350,
     color: "#d81159",
     fontStyle: "normal",
     fontSize: "100px",
-    opacity: "0.3"
+    opacity: "0.3",
+    zIndex: "10"
   }}
   >
     ABOUT
