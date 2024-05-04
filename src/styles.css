@@ -1,6 +1,6 @@
 .headerH1 {
-  font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
-  font-size: 2.5rem; /* Large font size */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3.5rem; /* Large font size */
   font-weight: 700; /* Bold font weight */
   color: #fff; /* White text color */
 }

@@ -16,7 +16,7 @@ const ProjectsContext = createContext([]);
 
 const Section = ({ title, children, sectionRef, sectionClass }) => (
   <section ref={sectionRef} className={`section ${sectionClass}`}>
-    <h2>{title}</h2>
+    <h2>{title}</h2>  
     <div className="project-cards">{children}</div>
   </section>
 );
@@ -151,9 +151,9 @@ function App() {
     <div className="App">
       <header className={`App-header ${headerVisible ? 'visible' : 'hidden'}`}>
         <a href="/">
-          <img src="/LOGO.ico" alt="Logo" />
+          <img src="/TNT_LOGO.png" style={{height: "70px", width: "auto", marginLeft: "30px"}} alt="Logo" />
         </a>
-        <h1 className='headerH1'>TATE BRAECKEL</h1>
+        <h1 className='headerH1'>TATE BRAECKEL: DEVELOPER ~ DESIGNER ~ CREATIVE</h1>
         <nav>
           <ul>
             <li onClick={() => scrollToRef(developerRef)}><button className="button">Developer</button></li>
@@ -173,29 +173,81 @@ function App() {
       </Routes>
         <AnimationVideoS1 /> 
         <ProjectsContext.Provider value={devProjects}>
-          <Section title="DEVELOPER" sectionRef={developerRef} sectionClass="developer">
+          <Section sectionRef={developerRef} sectionClass="developer">
+          <h1 style={{   
+      padding: "30px 0 0 30px",
+      fontFamily: "Changa, sans-serif",
+      fontOpticalSizing: "auto",
+      fontWeight: 400,
+      color: "#8ecae6",
+      fontStyle: "normal",
+      fontSize: "100px",
+      opacity: "0.75"
+    }}
+    >
+      DEVELOPER
+    </h1>
             {devProjects.map((project, index) => (
               <DeveloperProjectCard key={index} {...project} />
             ))}
           </Section>
         </ProjectsContext.Provider>
         <ProjectsContext.Provider value={desProjects}>
-          <Section title="DESIGNER" sectionRef={designerRef} sectionClass="designer">
-            {desProjects.map((project, index) => (
-              <DesignProjectCard key={index} {...project} />
-            ))}
-          </Section>
-        </ProjectsContext.Provider>
-        <Section title="CREATOR" sectionRef={creatorRef} sectionClass="creator">
+  <Section sectionRef={designerRef} sectionClass="designer">
+    <h1 style={{   
+      padding: "30px 0 0 30px",
+      fontFamily: "Changa, sans-serif",
+      fontOpticalSizing: "auto",
+      fontWeight: 400,
+      color: "#b56576",
+      fontStyle: "normal",
+      fontSize: "100px",
+      opacity: "0.75"
+    }}
+    >
+      DESIGNER
+    </h1>
+    {desProjects.map((project, index) => (
+      <DesignProjectCard key={index} {...project} />
+    ))}
+  </Section>
+</ProjectsContext.Provider>
+        <Section  sectionRef={creatorRef} sectionClass="creator">
+        <h1 style={{   
+      padding: "30px 0 0 30px",
+      fontFamily: "Changa, sans-serif",
+      fontOpticalSizing: "auto",
+      fontWeight: 400,
+      color: "#0c61d8",
+      fontStyle: "normal",
+      fontSize: "100px",
+      opacity: "0.75"
+    }}
+    >
+      CREATOR
+    </h1>
           {creProjects.map((project, index) => (
             <CreatorProjectCard key={index} {...project} />
           ))}
         </Section>
-        <Section  sectionRef={aboutRef} sectionClass="about">
-          <AboutProvider>
-            <AboutSection />
-          </AboutProvider>
-        </Section>
+        <Section sectionRef={aboutRef} sectionClass="about">
+  <h1 style={{   
+    padding: "30px 0 0 30px",
+    fontFamily: "Changa, sans-serif",
+    fontOpticalSizing: "auto",
+    fontWeight: 400,
+    color: "#d81159",
+    fontStyle: "normal",
+    fontSize: "100px",
+    opacity: "0.3"
+  }}
+  >
+    ABOUT
+  </h1>
+  <AboutProvider>
+    <AboutSection />
+  </AboutProvider>
+</Section>
       </main>
       {showScrollButton && <ScrollToTopButton onClick={() => setShowScrollButton(false)} />}
       <footer>
