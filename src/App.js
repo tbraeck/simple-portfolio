@@ -204,6 +204,7 @@ function App() {
             ))}
           </Section>
         </ProjectsContext.Provider>
+        <div style={{display: "flex"}}>
         <ProjectsContext.Provider value={desProjects}>
   <Section sectionRef={designerRef} sectionClass="designer">
     <h1 style={{   
@@ -224,7 +225,9 @@ function App() {
     ))}
   </Section>
 </ProjectsContext.Provider>
-        <Section  sectionRef={creatorRef} sectionClass="creator">
+</div>
+<div >
+<Section  sectionRef={creatorRef} sectionClass="creator">
         <h1 style={{   
       // padding: "0px 0 0 0px",
       fontFamily: "Changa, sans-serif",
@@ -238,11 +241,13 @@ function App() {
     }}
     >
       CREATOR
-    </h1>
+    </h1> 
           {creProjects.map((project, index) => (
             <CreatorProjectCard key={index} {...project} />
           ))}
         </Section>
+</div>
+        
         <Section sectionRef={aboutRef} sectionClass="about">
   <h1 style={{   
     // padding: "30px 0 0 30px",
