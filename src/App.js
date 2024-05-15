@@ -4,7 +4,9 @@ import DesignProjectCard from './components/DesignProjectCard';
 import DeveloperProjectCard from './components/DeveloperProjectCard';
 import CreatorProjectCard from './components/CreatorProjectCard';
 import AboutSection from './components/AboutSection';
-import { AboutProvider } from './AboutContext';
+// import { AboutProvider } from '../AboutContext';
+import { AboutProvider } from './contexts/AboutContext';
+
 import ProjectDetailPage from './components/ProjectDetailPage';
 import { Routes, Route } from 'react-router-dom';
 
