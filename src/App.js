@@ -1,16 +1,16 @@
 import React, { useRef, createContext, useState, useEffect } from 'react';
-import ScrollToTopButton from './ScrollToTopButton';
-import DesignProjectCard from './DesignProjectCard';
-import DeveloperProjectCard from './DeveloperProjectCard';
-import CreatorProjectCard from './CreatorProjectCard';
-import AboutSection from './AboutSection';
+import ScrollToTopButton from './components/ScrollToTopButton';
+import DesignProjectCard from './components/DesignProjectCard';
+import DeveloperProjectCard from './components/DeveloperProjectCard';
+import CreatorProjectCard from './components/CreatorProjectCard';
+import AboutSection from './components/AboutSection';
 import { AboutProvider } from './AboutContext';
-import ProjectDetailPage from './ProjectDetailPage';
+import ProjectDetailPage from './components/ProjectDetailPage';
 import { Routes, Route } from 'react-router-dom';
 
 // import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 import './styles.css';
-import AnimationVideoS1 from './AnimationVideoS1'; // Import the AnimationVideoS1 component
+import AnimationVideoS1 from './components/AnimationVideoS1'; // Import the AnimationVideoS1 component
 
 const ProjectsContext = createContext([]);
 
