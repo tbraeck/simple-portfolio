@@ -8,7 +8,6 @@ import AboutSection from './components/AboutSection';
 import { AboutProvider } from './contexts/AboutContext';
 import ProjectDetailPage from './components/ProjectDetailPage';
 import { Grid, Container, Typography } from '@mui/material';
-import SearchAppBar from './components/SearchAppBar';
 import { Routes, Route } from 'react-router-dom';
 
 // import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
@@ -176,7 +175,6 @@ function App() {
         </nav>
       </header>
       <main>
-        <SearchAppBar/>
       <Routes> 
           <Route exact path="/"  /> 
            {/* <Route exact path="/projects" component={Projects} />  */}
