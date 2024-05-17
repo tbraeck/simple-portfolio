@@ -13,7 +13,7 @@ import { Routes, Route } from 'react-router-dom';
 // import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 import './styles.css';
 import AnimationVideoS1 from './components/AnimationVideoS1'; // Import the AnimationVideoS1 component
-
+import Home from './Home';
 const ProjectsContext = createContext([]);
 
 const Section = ({ title, children, sectionRef, sectionClass }) => (
@@ -98,8 +98,7 @@ function App() {
       githubUrl: 'https://github.com/yourusername/project1',
       projectId: 6
     },
-    // Add more project objects as needed
-  ];
+    ];
 
   const creProjects = [
     {
@@ -175,6 +174,7 @@ function App() {
         </nav>
       </header>
       <main>
+        <Home/>
       <Routes> 
           <Route exact path="/"  /> 
            {/* <Route exact path="/projects" component={Projects} />  */}
