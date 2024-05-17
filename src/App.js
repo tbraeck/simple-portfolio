@@ -6,8 +6,9 @@ import CreatorProjectCard from './components/CreatorProjectCard';
 import AboutSection from './components/AboutSection';
 // import { AboutProvider } from '../AboutContext';
 import { AboutProvider } from './contexts/AboutContext';
-
 import ProjectDetailPage from './components/ProjectDetailPage';
+import { Grid, Container, Typography } from '@mui/material';
+import SearchAppBar from './components/SearchAppBar';
 import { Routes, Route } from 'react-router-dom';
 
 // import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
@@ -52,8 +53,6 @@ function App() {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
 
-
-  // Sample project data
   const devProjects = [
     {
       title: 'Project 1',
@@ -76,7 +75,6 @@ function App() {
       githubUrl: 'https://github.com/yourusername/project3',
       projectId: 3
     },
-    // Add more project objects as needed
   ];
 
   const desProjects = [
@@ -178,6 +176,7 @@ function App() {
         </nav>
       </header>
       <main>
+        <SearchAppBar/>
       <Routes> 
           <Route exact path="/"  /> 
            {/* <Route exact path="/projects" component={Projects} />  */}
