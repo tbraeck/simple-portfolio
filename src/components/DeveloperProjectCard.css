@@ -1,3 +1,21 @@
+@keyframes curveUpLeft {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-20px, -20px);
+  }
+  50% {
+    transform: translate(-30px, -40px);
+  }
+  75% {
+    transform: translate(-40px, -70px);
+  }
+  100% {
+    transform: translate(-50px, -110px);
+  }
+}
+
 .developer-project-card {
   background-color: #f8f9fa; /* Initial background color */
   border-radius: 10px;
@@ -5,19 +23,20 @@
   padding: 20px;
   max-width: 300px;
   margin: 15px;
-  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .developer-project-card:hover {
   background-color: rgba(248, 249, 250, 0.7); /* Change the opacity on hover */
-  transform: translateY(-100px); /* Move the card up by 20px on hover */
+  animation: curveUpLeft 0.5s forwards;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Other styles remain the same */
-
 
 .developer-project-title {
   font-size: 24px;
