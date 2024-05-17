@@ -193,7 +193,8 @@ function App() {
       color: "#8ecae6",
       fontStyle: "normal",
       fontSize: "100px",
-      opacity: "0.75"
+      opacity: "0.75",
+      justifyContent: "space-evenly",
     }}
     >
       DEVELOPER
