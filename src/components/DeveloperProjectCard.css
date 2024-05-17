@@ -32,7 +32,7 @@
 
 .developer-project-card:hover {
   background-color: rgba(248, 249, 250, 0.7); /* Change the opacity on hover */
-  animation: curveUpLeft 0.5s forwards;
+  animation: curveUpLeft 0.2s forwards;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
