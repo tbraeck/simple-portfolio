@@ -1,34 +1,38 @@
-import React from 'react'
-import DevCard from './components/DevCard';
-// import Container from '@mui/material/Container';
+import React from 'react';
+// import DevCard from './components/DevCard';
 import { Grid, Container, Typography } from '@mui/material';
-import devProjects from "./data.json"
+// import { useDevProjectContext } from './contexts/DevProjectContext';
 
 const Home = () => {
-// console.log(data)
-const dataDev = devProjects;
-  
+  // const devProjects = useDevProjectContext();
 
   return (
     <div className="App">
-    <Container sx={{ marginY: 5 }}>
-      <Typography 
-        variant="h4"
-        component="h2"
-        marginTop={5}
-        marginBottom={3}
-      >
-        Developer Projects
-      </Typography>
-      <Grid container spacing={3}>
-        {dataDev.map((project, index) => (
-          <DevCard key={index} project={project} />
-        ))}
-      </Grid>
-    </Container>
-  </div>
-);
+      <Container sx={{ marginY: 5 }}>
+        <Typography 
+          variant="h4"
+          component="h2"
+          marginTop={5}
+          marginBottom={3}
+        >
+          Developer Projects
+        </Typography>
+        <Grid container spacing={3}>
+          {/* {devProjects.length > 0 ? (
+            devProjects.map((project, index) => (
+              <Grid item xs={12} sm={6} md={4} key={index}>
+                <DevCard project={project} />
+              </Grid>
+            ))
+          ) : (
+            <Typography variant="h6" component="p">
+              No projects available.
+            </Typography>
+          )} */}
+        </Grid> 
+      </Container>
+    </div>
+  );
 }
 
-
-export default Home
+export default Home;
