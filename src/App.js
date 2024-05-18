@@ -296,7 +296,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 function App() {
   return (
     <BrowserRouter>
-    {/* <SearchAppBar/> */}
+    <SearchAppBar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       {/* <Route path='/:id' element={<Tour/>}/> */}
