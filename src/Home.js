@@ -2,11 +2,11 @@ import React from 'react'
 import DevCard from './components/DevCard';
 // import Container from '@mui/material/Container';
 import { Grid, Container, Typography } from '@mui/material';
-import data from "./data.json"
+import devProjects from "./data.json"
 
 const Home = () => {
-
-const devProjects = data;
+// console.log(data)
+const dataDev = devProjects;
   
 
   return (
@@ -21,7 +21,7 @@ const devProjects = data;
         Developer Projects
       </Typography>
       <Grid container spacing={3}>
-        {devProjects.map((project, index) => (
+        {dataDev.map((project, index) => (
           <DevCard key={index} project={project} />
         ))}
       </Grid>

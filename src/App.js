@@ -14,6 +14,8 @@ import { Routes, Route } from 'react-router-dom';
 import './styles.css';
 import AnimationVideoS1 from './components/AnimationVideoS1'; // Import the AnimationVideoS1 component
 import Home from './Home';
+import data from "./data.json"
+
 const ProjectsContext = createContext([]);
 
 const Section = ({ title, children, sectionRef, sectionClass }) => (
@@ -34,6 +36,8 @@ function App() {
   const creatorRef = useRef(null);
   const aboutRef = useRef(null);
 
+
+  
   const handleScroll = () => {
     const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
     setHeaderVisible(currentScrollTop <= lastScrollTop || currentScrollTop < 100);
