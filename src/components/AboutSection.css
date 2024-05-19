@@ -2,34 +2,47 @@
 
 .about-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
     margin-top: 0px;
     margin: 0px 40px 0px 40px !important;
     width: 1000px;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 0px;
   }
   
   .about-title {
+    display: flex;
     font-size: 2.5rem;
     color: #333;
     padding: 0px;
   }
   
   .about-description {
+    display: flex;
+    width: 500px;
     font-size: 1.2rem;
     color: #666;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
   
+  .tech-skills{
+    margin-left: 150px;
+align-items: flex-start;
+justify-content: center;
+  }
+
   .tech-skills-title {
-    font-size: 1.5rem;
+    /* display: flex; */
+    /* flex-direction: column; */
+    font-size: 2.5rem;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
   
   .tech-skills-list {
+    display: flex;
+flex-direction: column;
     list-style-type: none;
     padding: 0;
   }
