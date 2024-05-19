@@ -1,0 +1,93 @@
+{
+    "devProjects": [
+      {
+        "title": "Project 1",
+        "description": "Description of Project 1",
+        "videoUrl": "https://www.youtube.com/embed/VIDEO_ID_1",
+        "githubUrl": "https://github.com/yourusername/project1",
+        "projectId": 1
+      },
+      {
+        "title": "Project 2",
+        "description": "Description of Project 2",
+        "videoUrl": "https://www.youtube.com/embed/VIDEO_ID_2",
+        "githubUrl": "https://github.com/yourusername/project2",
+        "projectId": 2
+      },
+      {
+        "title": "Project 3",
+        "description": "Description of Project 3",
+        "videoUrl": "https://www.youtube.com/embed/VIDEO_ID_3",
+        "githubUrl": "https://github.com/yourusername/project3",
+        "projectId": 3
+      }
+    ],
+    "desProjects": [
+      {
+        "title": "Project 1",
+        "description": "Description of Project 1",
+        "imageUrl": "https://picsum.photos/200/300",
+        "githubUrl": "https://github.com/yourusername/project1",
+        "projectId": 4
+      },
+      {
+        "title": "Project 2",
+        "description": "Description of Project 1",
+        "imageUrl": "https://picsum.photos/200/300",
+        "githubUrl": "https://github.com/yourusername/project1",
+        "projectId": 5
+      },
+      {
+        "title": "Project 3",
+        "description": "Description of Project 1",
+        "imageUrl": "https://picsum.photos/200/300",
+        "githubUrl": "https://github.com/yourusername/project1",
+        "projectId": 6
+      }
+    ],
+    "creProjects": [
+      {
+        "title": "Project 1",
+        "description": "Description of Project 1",
+        "medium": "MEDIUM",
+        "imageUrl": "https://picsum.photos/200",
+        "projectId": 7
+      },
+      {
+        "title": "Project 2",
+        "description": "Description of Project 1",
+        "medium": "MEDIUM",
+        "imageUrl": "https://picsum.photos/200",
+        "projectId": 8
+      },
+      {
+        "title": "Project 3",
+        "description": "Description of Project 1",
+        "medium": "MEDIUM",
+        "imageUrl": "https://picsum.photos/200",
+        "projectId": 9
+      },
+      {
+        "title": "Project 1",
+        "description": "Description of Project 1",
+        "medium": "MEDIUM",
+        "imageUrl": "https://picsum.photos/200",
+        "projectId": 10
+      },
+      {
+        "title": "Project 2",
+        "description": "Description of Project 1",
+        "medium": "MEDIUM",
+        "imageUrl": "https://picsum.photos/200",
+        "projectId": 11
+      },
+      {
+        "title": "Project 3",
+        "description": "Description of Project 1",
+        "medium": "MEDIUM",
+        "imageUrl": "https://picsum.photos/200",
+        "projectId": 12
+      }
+    ]
+  }
+  

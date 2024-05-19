@@ -1,6 +1,6 @@
 // AboutSection.js
 import React from 'react';
-import { useAboutContext } from './AboutContext';
+import { useAboutContext } from '../contexts/AboutContext';
 import './AboutSection.css';
 
 const AboutSection = () => {

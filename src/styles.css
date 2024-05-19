@@ -68,7 +68,7 @@ nav ul li button:hover {
 .developer {
   background-image: url("/public/water_bg.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:   cover;
 }
 
 .designer {

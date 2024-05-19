@@ -1,4 +1,3 @@
-// AboutContext.js
 import React, { createContext, useContext } from 'react';
 
 // Define the context
@@ -9,7 +8,7 @@ export const useDevProjectContext = () => useContext(DevProjectContext);
 
 // Provider component to provide the context value
 export const DevProjectProvider = ({ children }) => {
-  // Define your About section data
+  // Define your Developer Projects data
   const devProjects = [
     {
       title: 'Project 1',
@@ -32,7 +31,6 @@ export const DevProjectProvider = ({ children }) => {
       githubUrl: 'https://github.com/yourusername/project3',
       projectId: 3
     },
-    // Add more project objects as needed
   ];
 
   return (
@@ -41,5 +39,3 @@ export const DevProjectProvider = ({ children }) => {
     </DevProjectContext.Provider>
   );
 };
-
-
