@@ -85,21 +85,21 @@ function App() {
       description: 'Designed multiple products and logos for numerous international schools.',
       medium: 'Digital',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/international-day-shirt-1-black-text-alter-1_orig.jpg',
-      projectId: 8
+      projectId: 4
     },
     {
       title: 'Shirt Logo Design',
       description: 'Shirt design for online sales. Product displayed on Zazzle.',
       medium: 'Digital',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/silly-kitty-rainbows-design-canva_orig.png',
-      projectId: 8
+      projectId: 5
     },
     {
       title: 'Crossfit Apparel Design',
       description: 'Shirt design for KFT Brands Apparel Company.',
       medium: 'Digital',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/untitled-design-18_orig.png',
-      projectId: 8
+      projectId: 6
     },
   ];
 
@@ -112,24 +112,24 @@ function App() {
       projectId: 7
     },
     {
-      title: 'International School Product Design',
-      description: 'Designed multiple products and logos for numerous international schools.',
-      medium: 'Digital',
-      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/international-day-shirt-1-black-text-alter-1_orig.jpg',
+      title: 'Heart and Brain',
+      description: 'Illustration about how our minds and our hearts arre always connected.',
+      medium: 'Pencil and Ink',
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/heart-and-brain_orig.png',
       projectId: 8
     },
     {
-      title: 'Project 3',
-      description: 'Description of Project 1',
-      medium: 'MEDIUM',
-      imageUrl: 'https://picsum.photos/200',
+      title: 'On Fire',
+      description: 'An illustration using line and shape to create a stylized depiction of a woman who embodies power.',
+      medium: 'Pencil | Ink | Digital',
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/on-fire-hair-extensions-portfolio_orig.png',
       projectId: 9
     },
     {
-      title: 'Project 1',
-      description: 'Description of Project 1',
+      title: 'Agua',
+      description: 'This illustration was inspired by humanity always struggling with borders, resources, and who is deserving or worthy of what.',
       medium: 'MEDIUM',
-      imageUrl: 'https://picsum.photos/200',
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/agua-color-1_orig.png',
       projectId: 10
     },
     {
