@@ -51,69 +51,71 @@ function App() {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
 
-
-  // Sample project data
+ 
   const devProjects = [
     {
-      title: 'Project 1',
-      description: 'Description of Project 1',
-      videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_1',
-      githubUrl: 'https://github.com/yourusername/project1',
+      title: 'Barter Barn',
+      description: 'Barter Barn is a forum-style app that encourages community bartering of services and goods.',
+      videoUrl: 'https://youtu.be/H4KahrCLvLM',
+      githubUrl: 'https://github.com/tbraeck/barter_barn_v2',
+      imageUrl: 'barterBarn.png',
       projectId: 1
     },
     {
-      title: 'Project 2',
-      description: 'Description of Project 2',
-      videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_2',
-      githubUrl: 'https://github.com/yourusername/project2',
+      title: 'Teach Source',
+      description: 'Teach Source was created to be a resource database for all educators to access for their instructional needs.',
+      videoUrl: 'https://youtu.be/KeARm1YrWls',
+      githubUrl: 'https://github.com/tbraeck/phase-3-project-tate-braeckel-frontend-react-main',
+      imageUrl: 'drawingIdeas.png',
       projectId: 2
     },
     {
-      title: 'Project 3',
-      description: 'Description of Project 3',
-      videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_3',
-      githubUrl: 'https://github.com/yourusername/project3',
+      title: 'Drawing Ideas Now!',
+      description: 'Drawing Ideas Now was created to inspire every artist or budding artist for drawing or creative ideas.',
+      videoUrl: 'https://youtu.be/b4JDXWqOegs',
+      githubUrl: 'https://github.com/tbraeck/PHASE4_PROJECT',
+      imageUrl: 'teachSource.png',
       projectId: 3
     },
   ];
 
   const desProjects = [
     {
-      title: 'Project 1',
-      description: 'Description of Project 1',
-      imageUrl: 'https://picsum.photos/200/300',
-      githubUrl: 'https://github.com/yourusername/project1',
-      projectId: 4
+      title: 'Private School Product Design',
+      description: 'Designed multiple products and logos for numerous international schools.',
+      medium: 'Digital',
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/international-day-shirt-1-black-text-alter-1_orig.jpg',
+      projectId: 8
     },
     {
-      title: 'Project 2',
-      description: 'Description of Project 1',
-      imageUrl: 'https://picsum.photos/200/300',
-      githubUrl: 'https://github.com/yourusername/project1',
-      projectId: 5
+      title: 'Shirt Logo Design',
+      description: 'Shirt design for online sales.',
+      medium: 'Digital',
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/silly-kitty-rainbows-design-canva_orig.png',
+      projectId: 8
     },
     {
-      title: 'Project 3',
-      description: 'Description of Project 1',
-      imageUrl: 'https://picsum.photos/200/300',
-      githubUrl: 'https://github.com/yourusername/project1',
-      projectId: 6
+      title: 'Crossfit Apparel Design',
+      description: 'Shirt design for KFT Brands Apparel Company.',
+      medium: 'Digital',
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/untitled-design-18_orig.png',
+      projectId: 8
     },
   ];
 
   const creProjects = [
     {
-      title: 'Project 1',
-      description: 'Description of Project 1',
-      medium: 'MEDIUM',
-      imageUrl: 'https://picsum.photos/200',
+      title: "Why Can't You See It?",
+      description: "Illustrated children's book using hand-drawn art, Adobe Photoshop, and Adobe In-Design",
+      medium: 'Pen & Ink | Digital',
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/wcysi-cover_orig.jpg',
       projectId: 7
     },
     {
-      title: 'Project 2',
-      description: 'Description of Project 1',
-      medium: 'MEDIUM',
-      imageUrl: 'https://picsum.photos/200',
+      title: 'International School Product Design',
+      description: 'Designed multiple products and logos for numerous international schools.',
+      medium: 'Digital',
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/international-day-shirt-1-black-text-alter-1_orig.jpg',
       projectId: 8
     },
     {
@@ -193,7 +195,8 @@ function App() {
       color: "#8ecae6",
       fontStyle: "normal",
       fontSize: "100px",
-      opacity: "0.75"
+      opacity: "0.75",
+      marginRight: "65px"
     }}
     >
       DEVELOPER
@@ -215,7 +218,9 @@ function App() {
       color: "#b56576",
       fontStyle: "normal",
       fontSize: "100px",
-      opacity: "0.75"
+      opacity: "0.75",
+      marginRight: "65px"
+
     }}
     >
       DESIGNER
@@ -237,7 +242,9 @@ function App() {
       fontStyle: "normal",
       fontSize: "100px",
       opacity: "0.75",
-      zIndex: "10"
+      zIndex: "10",
+      marginLeft: "55px"
+
     }}
     >
       CREATOR
@@ -255,11 +262,13 @@ function App() {
     fontFamily: "Changa, sans-serif",
     fontOpticalSizing: "auto",
     fontWeight: 350,
-    color: "#d81159",
+    color: "#AA336A",
     fontStyle: "normal",
     fontSize: "100px",
-    opacity: "0.3",
-    zIndex: "10"
+    opacity: "0.7",
+    zIndex: "10",
+    marginRight: "55px"
+
   }}
   >
     ABOUT

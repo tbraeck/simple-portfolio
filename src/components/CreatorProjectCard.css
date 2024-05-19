@@ -44,5 +44,6 @@
 }
 
 .creator-project-card .overlay p {
-  margin-bottom: 30px; /* Remove bottom margin for paragraph */
+  margin-bottom: 30px;
+  margin: 20px;/* Remove bottom margin for paragraph */
 }

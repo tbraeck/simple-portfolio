@@ -17,9 +17,9 @@
 }
 
 .developer-project-card {
-  background-color: #f8f9fa; /* Initial background color */
+  background-color: #64ac71; /* Initial background color */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 8px rgba(251, 250, 250, 0.1);
   padding: 20px;
   max-width: 300px;
   margin: 15px;
@@ -33,6 +33,7 @@
 .developer-project-card:hover {
   background-color: rgba(248, 249, 250, 0.7); /* Change the opacity on hover */
   animation: curveUpLeft 0.2s forwards;
+  color: #090909;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -40,15 +41,20 @@
 
 .developer-project-title {
   font-size: 24px;
-  color: #333;
+  color: #fefefe;
   margin-bottom: 10px;
 }
 
 .developer-project-description {
   font-size: 16px;
-  color: #666;
+  color: #fafafa;
   margin-bottom: 20px;
 }
+
+.developer-project-description:hover, 
+.developer-project-title:hover{
+  color: #090909;
+}  
 
 .developer-video-container {
   width: 100%;
@@ -72,6 +78,8 @@
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
+  margin-left: 30px;
+
 }
 
 .developer-github-link:hover,

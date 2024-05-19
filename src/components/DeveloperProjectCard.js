@@ -11,7 +11,7 @@ const DeveloperProjectCard = ({ title, description, videoUrl, githubUrl, project
         <video className="developer-project-video" src={videoUrl} controls></video>
       </div>
       <div className="developer-project-links">
-        <a className="developer-github-link" href={githubUrl}>GitHub</a>
+        {/* <a className="developer-github-link" href={githubUrl}>GitHub</a> */}
         <Link className="details-link" to={`/projects/${projectId}`}>
           View Details
         </Link>

@@ -17,7 +17,7 @@ const CreatorProjectCard = ({ id, title, medium, description, imageUrl }) => {
           <div className="overlay">
             <h3>{title}</h3>
             <p>Medium: {medium}</p>
-            <p>Description: {description}</p>
+            <p>{description}</p>
           </div>
         )}
       </div>

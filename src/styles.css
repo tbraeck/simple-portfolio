@@ -84,9 +84,12 @@ nav ul li button:hover {
 }
 
 .about {
-  margin-top: 0px;
+  /* margin-top: 0px;
   padding: 0px;
-  background-color: #d2a8d8; 
+  background-color: #d2a8d8;  */
+  background-image: url("/public/pink_water_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .button {
