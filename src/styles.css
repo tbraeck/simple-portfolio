@@ -74,7 +74,8 @@ nav ul li button:hover {
 .designer {
   background-image: url("/public/blue_bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;}
+  background-size: cover;
+}
 
 .creator {
   background-image: url("/public/pink_bg.jpg");

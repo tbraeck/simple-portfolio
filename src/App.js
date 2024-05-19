@@ -5,7 +5,7 @@ import DeveloperProjectCard from './components/DeveloperProjectCard';
 import CreatorProjectCard from './components/CreatorProjectCard';
 import AboutSection from './components/AboutSection';
 import { AboutProvider } from './components/AboutContext';
-import ProjectDetailPage from './ProjectDetailPage';
+// import ProjectDetailPage from './ProjectDetailPage';
 import { Routes, Route } from 'react-router-dom';
 
 // import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
@@ -44,7 +44,8 @@ function App() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [lastScrollTop]);
+    // eslint-disable-next-line
+  }, [lastScrollTop,]);
 
   const scrollToRef = (ref) => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -74,7 +75,6 @@ function App() {
       githubUrl: 'https://github.com/yourusername/project3',
       projectId: 3
     },
-    // Add more project objects as needed
   ];
 
   const desProjects = [
@@ -99,7 +99,6 @@ function App() {
       githubUrl: 'https://github.com/yourusername/project1',
       projectId: 6
     },
-    // Add more project objects as needed
   ];
 
   const creProjects = [
@@ -204,11 +203,12 @@ function App() {
             ))}
           </Section>
         </ProjectsContext.Provider>
-        <div style={{display: "flex"}}>
+
+        <div >
         <ProjectsContext.Provider value={desProjects}>
   <Section sectionRef={designerRef} sectionClass="designer">
-    <h1 style={{   
-      // padding: "30px 0 0 30px",
+            <h1 style={{   
+      paddingLeft: "30px",
       fontFamily: "Changa, sans-serif",
       fontOpticalSizing: "auto",
       fontWeight: 350,
@@ -220,9 +220,11 @@ function App() {
     >
       DESIGNER
     </h1>
+   
     {desProjects.map((project, index) => (
       <DesignProjectCard key={index} {...project} />
     ))}
+   
   </Section>
 </ProjectsContext.Provider>
 </div>
