@@ -4,9 +4,9 @@ import './DeveloperProjectCard.css'; // Import CSS file for the component
 
 const DeveloperProjectCard = ({ title, description, videoUrl, githubUrl, projectId }) => {
   return (
-    <div className="developer-project-card">
+    <div className="developer-project-card" >
       <h3 className="developer-project-title">{title}</h3>
-      <p className="developer-project-description">{description}</p>
+      <p className="developer-project-description"  numberOfLines={1}>{description}</p>
       <div className="developer-video-container">
         <video className="developer-project-video" src={videoUrl} controls></video>
       </div>

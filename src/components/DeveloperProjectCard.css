@@ -17,31 +17,43 @@
 }
 
 .developer-project-card {
-  background-color: #64ac71; /* Initial background color */
+  background-color: #0d0c0c; 
   border-radius: 10px;
   box-shadow: 0 10px 8px rgba(251, 250, 250, 0.1);
   padding: 20px;
   max-width: 300px;
-  margin: 15px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 15px auto;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
+  margin: 25px;
+  opacity: .7;
 }
 
 .developer-project-card:hover {
   background-color: rgba(248, 249, 250, 0.7); /* Change the opacity on hover */
   animation: curveUpLeft 0.2s forwards;
-  color: #090909;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: #98509e; /* Change text color on hover */
+  opacity: 1.0;
+
 }
 
-/* Other styles remain the same */
+.developer-project-card:hover .developer-project-title,
+.developer-project-card:hover .developer-project-description {
+  color: #154343; 
+  overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+}
 
 .developer-project-title {
   font-size: 24px;
-  color: #fefefe;
+  color: #54b7f5;
   margin-bottom: 10px;
 }
 
@@ -49,12 +61,13 @@
   font-size: 16px;
   color: #fafafa;
   margin-bottom: 20px;
+  overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+ 
 }
-
-.developer-project-description:hover, 
-.developer-project-title:hover{
-  color: #090909;
-}  
 
 .developer-video-container {
   width: 100%;
@@ -70,19 +83,19 @@
 .developer-project-links {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  color: #d400ff;
 }
 
 .developer-github-link,
 .developer-details-link {
-  color: #007bff;
+  color: #d400ff;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
-  margin-left: 30px;
-
 }
 
 .developer-github-link:hover,
 .developer-details-link:hover {
-  color: #0056b3;
+  color: #faf9fb;
 }

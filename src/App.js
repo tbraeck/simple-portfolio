@@ -89,7 +89,7 @@ function App() {
     },
     {
       title: 'Shirt Logo Design',
-      description: 'Shirt design for online sales.',
+      description: 'Shirt design for online sales. Product displayed on Zazzle.',
       medium: 'Digital',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/silly-kitty-rainbows-design-canva_orig.png',
       projectId: 8
