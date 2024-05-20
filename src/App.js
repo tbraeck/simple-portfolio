@@ -10,6 +10,7 @@ import { Routes, Route } from 'react-router-dom';
 
 // import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 import './styles.css';
+import DevCard from './components/DevCard';
 // import AnimationVideoS1 from './components/AnimationVideoS1'; // Import the AnimationVideoS1 component
 
 const ProjectsContext = createContext([]);
@@ -59,6 +60,7 @@ function App() {
       videoUrl: 'https://youtu.be/H4KahrCLvLM',
       githubUrl: 'https://github.com/tbraeck/barter_barn_v2',
       imageUrl: 'barterBarn.png',
+      type: "developer",
       projectId: 1
     },
     {
@@ -67,6 +69,7 @@ function App() {
       videoUrl: 'https://youtu.be/KeARm1YrWls',
       githubUrl: 'https://github.com/tbraeck/phase-3-project-tate-braeckel-frontend-react-main',
       imageUrl: 'drawingIdeas.png',
+      type: "developer",
       projectId: 2
     },
     {
@@ -75,6 +78,7 @@ function App() {
       videoUrl: 'https://youtu.be/b4JDXWqOegs',
       githubUrl: 'https://github.com/tbraeck/PHASE4_PROJECT',
       imageUrl: 'teachSource.png',
+      type: "developer",
       projectId: 3
     },
   ];
@@ -85,6 +89,7 @@ function App() {
       description: 'Designed multiple products and logos for numerous international schools.',
       medium: 'Digital',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/international-day-shirt-1-black-text-alter-1_orig.jpg',
+      type: "designer",
       projectId: 4
     },
     {
@@ -92,6 +97,7 @@ function App() {
       description: 'Shirt design for online sales. Product displayed on Zazzle.',
       medium: 'Digital',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/silly-kitty-rainbows-design-canva_orig.png',
+      type: "designer",
       projectId: 5
     },
     {
@@ -99,6 +105,7 @@ function App() {
       description: 'Shirt design for KFT Brands Apparel Company.',
       medium: 'Digital',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/untitled-design-18_orig.png',
+      type: "designer",
       projectId: 6
     },
   ];
@@ -109,6 +116,7 @@ function App() {
       description: "Illustrated children's book using hand-drawn art, Adobe Photoshop, and Adobe In-Design",
       medium: 'Pen & Ink | Digital',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/wcysi-cover_orig.jpg',
+      type: "creator",
       projectId: 7
     },
     {
@@ -116,6 +124,7 @@ function App() {
       description: 'Illustration about how our minds and our hearts arre always connected.',
       medium: 'Pencil | Ink',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/heart-and-brain_orig.png',
+      type: "creator",
       projectId: 8
     },
     {
@@ -123,6 +132,7 @@ function App() {
       description: 'An illustration using line and shape to create a stylized depiction of a woman who embodies power.',
       medium: 'Pencil | Ink | Digital',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/on-fire-hair-extensions-portfolio_orig.png',
+      type: "creator",
       projectId: 9
     },
     {
@@ -130,6 +140,7 @@ function App() {
       description: 'This illustration was inspired by humanity always struggling with borders, resources, and who is deserving or worthy of what.',
       medium: 'Digital',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/agua-color-1_orig.png',
+      type: "creator",
       projectId: 10
     },
     {
@@ -137,6 +148,7 @@ function App() {
       description: 'This guitar design was inspired by my love for Mexican traditional art. I incorporated as many motifs, colors, and symbols as I could in the overall composition. ',
       medium: 'Acrylic Paint',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/dia-muertos_orig.jpeg',
+      type: "creator",
       projectId: 11
     },
     {
@@ -144,6 +156,7 @@ function App() {
       description: 'This was commission piece done for a Realtor client who gives these as gifts for her clients when they close on a home.',
       medium: 'Pencil',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/p27_orig.png',
+      type: "creator",
       projectId: 12
     },
     {
@@ -151,6 +164,7 @@ function App() {
       description: 'This guitar design was inspired by my love for my partner and for the ocean, so I combined them in this composition.',
       medium: 'Acrylic Paint',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/p49_orig.png',
+      type: "creator",
       projectId: 13
     },
     {
@@ -158,6 +172,7 @@ function App() {
       description: 'This is self-portrait I did many years ago.',
       medium: 'Ink on Paper',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/selfie-pen_orig.png',
+      type: "creator",
       projectId: 14
     },
     
@@ -195,7 +210,7 @@ function App() {
           <Route exact path="/"  /> 
            {/* <Route exact path="/projects" component={Projects} />  */}
            {/* <Route path="/projects/:projectId" component={ProjectDetailPage} /> */}
-           <Route path="/projects/:projectId" component={DesignProjectCard} />
+           <Route path="/projects/:type/:projectId" component={DevCard} />
 
       </Routes>
         {/* <AnimationVideoS1 />  */}
