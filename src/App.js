@@ -140,13 +140,27 @@ function App() {
       projectId: 11
     },
     {
-      title: 'Project 3',
-      description: 'Description of Project 1',
-      medium: 'MEDIUM',
-      imageUrl: 'https://picsum.photos/200',
+      title: 'Home in Utah',
+      description: 'This was commission piece done for a Realtor client who gives these as gifts for her clients when they close on a home.',
+      medium: 'Pencil',
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/p27_orig.png',
       projectId: 12
     },
-    // Add more project objects as needed
+    {
+      title: 'Painted Guitar: Ocean',
+      description: 'This guitar design was inspired by my love for my partner and for the ocean, so I combined them in this composition.',
+      medium: 'Acrylic Paint',
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/p49_orig.png',
+      projectId: 13
+    },
+    {
+      title: 'Self-Portrait',
+      description: 'This is self-portrait I did many years ago.',
+      medium: 'Ink on Paper',
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/selfie-pen_orig.png',
+      projectId: 14
+    },
+    
   ];
 
   return (
