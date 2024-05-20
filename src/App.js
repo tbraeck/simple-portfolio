@@ -114,7 +114,7 @@ function App() {
     {
       title: 'Heart and Brain',
       description: 'Illustration about how our minds and our hearts arre always connected.',
-      medium: 'Pencil and Ink',
+      medium: 'Pencil | Ink',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/heart-and-brain_orig.png',
       projectId: 8
     },
@@ -128,15 +128,15 @@ function App() {
     {
       title: 'Agua',
       description: 'This illustration was inspired by humanity always struggling with borders, resources, and who is deserving or worthy of what.',
-      medium: 'MEDIUM',
+      medium: 'Digital',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/agua-color-1_orig.png',
       projectId: 10
     },
     {
-      title: 'Project 2',
-      description: 'Description of Project 1',
-      medium: 'MEDIUM',
-      imageUrl: 'https://picsum.photos/200',
+      title: 'Painted Guitar: Dia de Muertos',
+      description: 'This guitar design was inspired by my love for Mexican traditional art. I incorporated as many motifs, colors, and symbols as I could in the overall composition. ',
+      medium: 'Acrylic Paint',
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/dia-muertos_orig.jpeg',
       projectId: 11
     },
     {
