@@ -34,16 +34,23 @@
 }
 
 .creator-project-card .overlay-content {
-  padding: 20px; /* Add padding inside the overlay */
-  text-align: center; /* Center align text */
+  padding: 20px; 
+  text-align: center; 
 }
 
 .creator-project-card .overlay h3 {
-  margin-top: 20px; /* Remove top margin for heading */
-  margin-bottom: 10px; /* Add bottom margin for heading */
+  margin-top: 20px; 
+  margin-bottom: 10px; 
+  font-size: 24px;
+  color: rgb(227, 233, 109);
 }
 
 .creator-project-card .overlay p {
   margin-bottom: 30px;
-  margin: 20px;/* Remove bottom margin for paragraph */
+  margin: 20px;
+  overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
 }

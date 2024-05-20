@@ -133,7 +133,7 @@ function App() {
       projectId: 10
     },
     {
-      title: 'Painted Guitar: Dia de Muertos',
+      title: 'Dia de Muertos',
       description: 'This guitar design was inspired by my love for Mexican traditional art. I incorporated as many motifs, colors, and symbols as I could in the overall composition. ',
       medium: 'Acrylic Paint',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/dia-muertos_orig.jpeg',
@@ -147,7 +147,7 @@ function App() {
       projectId: 12
     },
     {
-      title: 'Painted Guitar: Ocean',
+      title: 'Ocean',
       description: 'This guitar design was inspired by my love for my partner and for the ocean, so I combined them in this composition.',
       medium: 'Acrylic Paint',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/p49_orig.png',

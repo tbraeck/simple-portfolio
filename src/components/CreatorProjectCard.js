@@ -16,7 +16,7 @@ const CreatorProjectCard = ({ id, title, medium, description, imageUrl }) => {
         {hovered && (
           <div className="overlay">
             <h3>{title}</h3>
-            <p>Medium: {medium}</p>
+            <p>{medium}</p>
             <p>{description}</p>
           </div>
         )}
