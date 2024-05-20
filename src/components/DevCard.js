@@ -1,107 +1,55 @@
-// import Card from '@mui/material/Card';
-// import CardContent from '@mui/material/CardContent';
-import { Paper, Grid, Typography, Box } from '@mui/material';
-import {AccessTime } from "@mui/icons-material"
-import {createTheme, ThemeProvider} from "@mui/material"
 import React from 'react';
-// import { DevProjectProvider } from '../contexts/DevProjectContext';
+import { useParams } from 'react-router-dom';
 
+const DevCard = () => {
+  const { type, projectId } = useParams();
 
+  const projectData = {
+    developer: {
+      1: {
+        title: 'Developer Project Title 1',
+        description: 'Detailed description of developer project 1',
+        videoUrl: 'video-url.mp4',
+        githubUrl: 'https://github.com/project1'
+      },
+      // Add more developer projects as needed
+    },
+    design: {
+      2: {
+        title: 'Design Project Title 1',
+        description: 'Detailed description of design project 1',
+        videoUrl: 'video-url.mp4',
+        githubUrl: 'https://github.com/project2'
+      },
+      // Add more design projects as needed
+    },
+    creator: {
+      3: {
+        title: 'Creator Project Title 1',
+        description: 'Detailed description of creator project 1',
+        videoUrl: 'video-url.mp4',
+        githubUrl: 'https://github.com/project3'
+      },
+      // Add more creator projects as needed
+    },
+  };
 
-// const theme = createTheme({
-//   components: {
-//     MuiTypography: {
-//       variants: [
-//         {
-//           props: {
-//             variant: "body2"
-//         }, 
-//         style: {
-//           fontSize: 11
-//         },
-//       },
-//       {
-//         props: {
-//           variant: "body3"
-//       }, 
-//       style: {
-//         fontSize: 9,
-//       },
-//     }
-//       ]
-//     }
-//   }
-// })
-const DevCard = ({project}) => {
+  const project = projectData[type]?.[projectId];
+
+  if (!project) {
+    return <div>Project not found</div>;
+  }
+
   return (
-    // <DevProjectProvider>
-        <Grid item xs={3}>
-      {/* <ThemeProvider theme={theme} > */}
-        <Paper elevation={5}>
-          <img 
-          src={project.imageUrl} 
-          alt='projectImg' 
-          className='img'/>
-        <Box paddingX={1}>
-        <Typography variant='subtitle1' component="h2">
-          {project.title}
-        </Typography>
-        </Box>
-        <Box
-          paddingX={1}
-          sx={{
-            display: 'flex',
-            alignitems: 'center',
-          }}>
-            <AccessTime sx={{width: 12.5}} />
-            <Typography variant='body2' component="p" marginLeft={0.5} marginTop={.5}>
-              {project.description} 
-            </Typography>
-        </Box>
-        <Box 
-         paddingX={1}
-         sx={{
-           display: 'flex',
-           alignitems: 'center'}}
-           marginTop={3}
-           >
-            {/* <Rating name="read-only" value={tour.rating} precision={0.25} size='small'readOnly /> */}
-          {/* <Typography 
-          variant='body2' 
-          component="p" 
-          marginLeft={0.5}
-          >
-            {tour.rating}
-          </Typography> */}
-          <Typography 
-          variant='body3' 
-          component="body3" 
-          marginLeft={1.5}
-          >
-            ({project.videoUrl})
-          </Typography>
-        </Box>
-        <Box 
-        paddingX={1}
-         sx={{
-          display: 'flex',
-          alignitems: 'center'}}
-          marginTop={0}
-          >
-        <Typography 
-          variant='h6' 
-          component="h3" 
-          marginTop={0}
-          >
-            {project.githubUrl}
-          </Typography>
-        </Box>
-        
-        </Paper>
-        {/* </ThemeProvider> */}
-    </Grid>
-    
-  )
-}
+    <div className={`dev-card ${type}`}>
+      <h2>{project.title}</h2>
+      <p>{project.description}</p>
+      <div className="developer-video-container">
+        <video className="developer-project-video" src={project.videoUrl} controls></video>
+      </div>
+      <a className="developer-github-link" href={project.githubUrl}>GitHub</a>
+    </div>
+  );
+};
 
-export default DevCard
+export default DevCard;
