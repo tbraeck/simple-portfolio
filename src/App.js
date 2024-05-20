@@ -290,13 +290,18 @@
 
 // export default App;
 import React from 'react'
+import SearchAppBar from './components/SearchAppBar';
 import './styles.css';
 
 const App = () => {
   return (
+    <>
+    {/* <SearchAppBar/> */}
     <div className='app'>
       
-    </div>
+      </div>
+    </>
+    
   )
 }
 

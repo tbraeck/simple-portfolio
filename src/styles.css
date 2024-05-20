@@ -2,14 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .app {
   background-image: url("http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/on-fire-hair-extensions-portfolio_orig.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: center;
-  height: 90vh; /* Ensure full viewport height */
-  width: 80%; /* Ensure full viewport width */
+  height: 100vh;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text */
+  padding: 20px;
 }
 
 
