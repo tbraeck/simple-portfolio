@@ -2,7 +2,6 @@
 import React from 'react';
 import { useAboutContext } from '../contexts/AboutContext';
 import './AboutSection.css';
-import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
   // Consume the context
