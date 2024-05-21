@@ -1,61 +1,130 @@
-/* AboutSection.css */
-
 .about-content {
+  position: relative;
   display: flex;
   flex-direction: row;
-    margin-top: 0px;
-    margin: 0px 40px 0px 40px !important;
-    width: 1000px;
-    justify-content: center;
-    /* align-items: center; */
-    margin-top: 0px;
-  }
-  
-  .about-title {
-    display: flex;
-    font-size: 2.5rem;
-    color: #faf9f9;
-    padding: 0px;
-  }
-  
-  .about-description {
-    display: flex;
-    width: 500px;
-    font-size: 1.2rem;
-    color: #f8f5f5;
-    margin-bottom: 60px;
-  }
-  
-  .tech-skills{
-    margin-left: 150px;
-align-items: flex-start;
-justify-content: center;
-  }
+  margin: 0px 40px 0px 0px !important;
+  width: 1250px;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 30px;
+  overflow: hidden;
+}
 
-  .tech-skills-title {
-    /* display: flex; */
-    /* flex-direction: column; */
-    font-size: 2.5rem;
-    color: #fafafa;
-    margin-bottom: 0px;
-  }
-  
-  .tech-skills-list {
-    display: flex;
-flex-direction: column;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .tech-skill {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 5px;
-  }
-  
-  .tech-skill:hover {
-    color: #000;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
+.about-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(204, 204, 204, 0.5); /* Adjust opacity here */
+  z-index: -1; /* Ensures the background is behind the content */
+  border-radius: 30px;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #080808;
+  padding: 0px;
+}
+
+.about-description {
+  width: 600px;
+  font-size: 1.2rem;
+  color: #292d53;
+  margin-bottom: 0px;
+}
+
+.tech-skills {
+  margin-left: 100px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.tech-skills-title {
+  font-size: 2.5rem;
+  color: #160612;
+  margin-bottom: 20px;
+}
+
+.tech-skills-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.tech-skill {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.tech-skill:hover {
+  color: #fdfbfb;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.soft-skills {
+  margin-left: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.soft-skills-title {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.soft-skills-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.soft-skill {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.soft-skill:hover {
+  color: #fdfbfb;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.links {
+  margin-left: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5px;
+}
+
+.links-title {
+  font-size: 2.5rem;
+  color: #030303;
+  margin-bottom: 80px;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 15px;
+}
+
+.link-item {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 5px;
+} 
+
+.link-item  :hover {
+  color: #fffdfd;
+  cursor: pointer;
+  font-weight: bold;
+}

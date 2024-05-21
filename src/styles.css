@@ -30,7 +30,7 @@ nav ul li button:hover {
 }
 
 .section {
-  height: 1000px;
+  height: 800px;
   display: flex;
   justify-content: center; 
   flex-direction: column;
@@ -39,8 +39,9 @@ nav ul li button:hover {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
   transition: all 0.3s ease;
-  padding-bottom: 30px;
-  margin-bottom: 10px; /* Add space between sections */
+  padding-bottom: 90px;
+  padding-top: 20px;
+  margin-bottom: 0px; /* Add space between sections */
   margin-top: 0px; /* Adjust top margin */
 }
 .section-header {
@@ -53,7 +54,8 @@ nav ul li button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: right; /* Align the project cards to the right */
-  margin-top: 20px; /* Add margin to separate the project cards from the title */
+  margin-top: 20px;
+   /* Add margin to separate the project cards from the title */
 }
 
 

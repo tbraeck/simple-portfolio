@@ -210,7 +210,7 @@ function App() {
           <Route exact path="/"  /> 
            {/* <Route exact path="/projects" component={Projects} />  */}
            {/* <Route path="/projects/:projectId" component={ProjectDetailPage} /> */}
-           <Route path="/:type/:projectId" component={DevCard} />
+           <Route path="/:projectId" element={<DevCard/>} />
 
       </Routes>
         {/* <AnimationVideoS1 />  */}
