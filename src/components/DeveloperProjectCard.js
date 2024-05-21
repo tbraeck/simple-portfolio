@@ -11,8 +11,8 @@ const DeveloperProjectCard = ({ title, description, videoUrl, githubUrl, project
         <video className="developer-project-video" src={videoUrl} controls></video>
       </div>
       <div className="developer-project-links">        
-        <Link className="details-link" to={`/${projectId}`} >
-         View Details
+        <Link className="details-link" to={`/${projectId}` } >
+          Details
         </Link>
       </div>
     </div>
@@ -20,3 +20,4 @@ const DeveloperProjectCard = ({ title, description, videoUrl, githubUrl, project
 };
 
 export default DeveloperProjectCard;
+
