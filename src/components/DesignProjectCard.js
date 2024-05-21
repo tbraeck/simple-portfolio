@@ -20,10 +20,9 @@ const DesignProjectCard = ({ projectId, title, description, medium, imageUrl }) 
         <img className="project-video" alt='' src={imageUrl}/>
       </div>
       <h3>{title}</h3>
+      <div className='design-break'></div>
       <p>{description}</p>
-      
       <div className="project-links">
-       
         <Link className="details-link" to={`/projects/${projectId}`}>
           View Details
         </Link>

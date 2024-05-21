@@ -8,6 +8,7 @@
   padding: 40px;
   border-radius: 30px;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .about-content::before {
@@ -17,8 +18,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(204, 204, 204, 0.5); /* Adjust opacity here */
-  z-index: -1; /* Ensures the background is behind the content */
+  background-color: rgba(204, 204, 204, 0.5);
+  z-index: -1; 
   border-radius: 30px;
 }
 
@@ -44,26 +45,33 @@
 .tech-skills-title {
   font-size: 2.5rem;
   color: #160612;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .tech-skills-list {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  padding: 0;
+  padding: 10px;
 }
 
 .tech-skill {
   font-size: 1.2rem;
   color: #666;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .tech-skill:hover {
   color: #fdfbfb;
   cursor: pointer;
-  font-weight: bold;
+  /* font-weight: bold; */
+}
+
+.tech-skills-break{
+  background-color: rgba(170, 51, 106, 0.5); 
+  height: 3px;
+  width: full;
+  z-index: -1; 
 }
 
 .soft-skills {
@@ -75,39 +83,45 @@
 .soft-skills-title {
   font-size: 2.5rem;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .soft-skills-list {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  padding: 0;
+  padding: 10px;
 }
 
 .soft-skill {
   font-size: 1.2rem;
   color: #666;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .soft-skill:hover {
   color: #fdfbfb;
   cursor: pointer;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
+.soft-skills-break{
+  background-color: rgba(170, 51, 106, 0.5); 
+  height: 3px;
+  width: full;
+  z-index: -1; 
+}
 .links {
   margin-left: 20px;
   align-items: flex-start;
   justify-content: center;
-  padding: 5px;
+  padding: 15px;
 }
 
 .links-title {
   font-size: 2.5rem;
   color: #030303;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 .links-list {
@@ -120,11 +134,18 @@
 .link-item {
   font-size: 1.2rem;
   color: #666;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 } 
 
 .link-item  :hover {
   color: #fffdfd;
   cursor: pointer;
-  font-weight: bold;
+  /* font-weight: bold; */
+}
+
+.links-break{
+  background-color: rgba(170, 51, 106, 0.5); 
+  height: 3px;
+  width: full;
+  z-index: -1; 
 }

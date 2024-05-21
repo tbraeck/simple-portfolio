@@ -34,6 +34,8 @@
   justify-content: center;
   text-align: center; 
   margin: 15px;
+  /* opacity: .8; */
+
 }
 
 .design-project-card:hover {
@@ -84,4 +86,11 @@ display: -webkit-box;
 
 .design-project-card .project-links a:hover {
   color: #f9f4f4;
+}
+
+.design-break{
+  background-color: rgba(170, 51, 106, 0.5); 
+  height: 3px;
+  width: full;
+  /* z-index: 1;  */
 }

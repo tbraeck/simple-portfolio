@@ -34,15 +34,15 @@ nav ul li button:hover {
   display: flex;
   justify-content: center; 
   flex-direction: column;
-  justify-content: center; /* Align items at the top */
+  justify-content: center; 
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
   transition: all 0.3s ease;
   padding-bottom: 90px;
   padding-top: 20px;
-  margin-bottom: 0px; /* Add space between sections */
-  margin-top: 0px; /* Adjust top margin */
+  margin-bottom: 0px; 
+  margin-top: 0px; 
 }
 .section-header {
   display: flex;
