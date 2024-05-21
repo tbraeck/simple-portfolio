@@ -210,9 +210,13 @@ function App() {
           <Route exact path="/"  /> 
            {/* <Route exact path="/projects" component={Projects} />  */}
            {/* <Route path="/projects/:projectId" component={ProjectDetailPage} /> */}
-           <Route path="/:projectId" element={<DevCard/>} />
-
-      </Routes>
+           <Route path="/projects/:type/:projectId" component={ <DevCard
+            creProjects={creProjects}
+            devProjects={devProjects}
+            desProjects={desProjects}
+            />}>
+        </Route>      
+        </Routes>
         {/* <AnimationVideoS1 />  */}
         <ProjectsContext.Provider value={devProjects}>
           <Section sectionRef={developerRef} sectionClass="developer">
@@ -311,7 +315,7 @@ function App() {
       </main>
       {showScrollButton && <ScrollToTopButton onClick={() => setShowScrollButton(false)} />}
       <footer>
-        <p style={{paddingLeft: "40px", paddingTop: "15px", height: "50px"
+        <p style={{paddingLeft: "40px", paddingTop: "15px", height: "5  0px"
         }}>© 2024 Tate Braeckel</p>
       </footer>
     </div>
