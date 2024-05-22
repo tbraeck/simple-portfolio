@@ -24,7 +24,7 @@ const DesignProjectCard = ({ projectId, title, description, medium, imageUrl }) 
       <p>{description}</p>
       <div className="project-links">
         <Link className="details-link" to={`/projects/${projectId}`}>
-          View Details
+          {/* View Details */}
         </Link>
       </div>
     </div>

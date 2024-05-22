@@ -12,7 +12,7 @@ const DeveloperProjectCard = ({ title, description, videoUrl, githubUrl, project
       </div>
       <div className="developer-project-links">        
         <Link className="details-link" to={`/${projectId}` } >
-          Details
+          {/* Details */}
         </Link>
       </div>
     </div>

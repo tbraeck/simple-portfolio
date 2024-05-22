@@ -66,7 +66,7 @@ function App() {
     },
     {
       title: 'Teach Source',
-      description: 'Teach Source was created to be a resource database for all educators to access for their instructional needs.',
+      description: 'Teach Source is a resource database for all educators to access for their instructional needs.',
       videoUrl: 'https://youtu.be/KeARm1YrWls',
       githubUrl: 'https://github.com/tbraeck/phase-3-project-tate-braeckel-frontend-react-main',
       imageUrl: 'drawingIdeas.png',
@@ -86,7 +86,7 @@ function App() {
 
   const desProjects = [
     {
-      title: 'Private School Product Design',
+      title: 'School Product Design',
       description: 'Designed multiple products and logos for numerous international schools.',
       medium: 'Digital',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/international-day-shirt-1-black-text-alter-1_orig.jpg',
