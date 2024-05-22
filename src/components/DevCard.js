@@ -20,7 +20,7 @@ const DevCard = ({creProjects, devProjects, desProjects}) => {
       break;
   }
 
-  console.log(devProjects)
+  // console.log(devProjects)
   const project = projects.find((proj) => proj.id === parseInt(projectId, 10));
 
   if (!project) {

@@ -122,7 +122,7 @@ function App() {
     },
     {
       title: 'Heart and Brain',
-      description: 'Illustration about how our minds and our hearts arre always connected.',
+      description: 'Illustration about how our minds and our hearts are always connected.',
       medium: 'Pencil | Ink',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/heart-and-brain_orig.png',
       type: "creator",
@@ -138,7 +138,7 @@ function App() {
     },
     {
       title: 'Agua',
-      description: 'This illustration was inspired by humanity always struggling with borders, resources, and who is deserving or worthy of what.',
+      description: "This illustration was inspired by humanity's constant struggle. ",
       medium: 'Digital',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/agua-color-1_orig.png',
       type: "creator",
@@ -146,7 +146,7 @@ function App() {
     },
     {
       title: 'Dia de Muertos',
-      description: 'This guitar design was inspired by my love for Mexican traditional art. I incorporated as many motifs, colors, and symbols as I could in the overall composition. ',
+      description: 'This guitar design was inspired by my love for Mexican traditional art. ',
       medium: 'Acrylic Paint',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/dia-muertos_orig.jpeg',
       type: "creator",
@@ -154,7 +154,7 @@ function App() {
     },
     {
       title: 'Home in Utah',
-      description: 'This was commission piece done for a Realtor client who gives these as gifts for her clients when they close on a home.',
+      description: 'This was commission piece done for a Realtor client for her own client.',
       medium: 'Pencil',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/p27_orig.png',
       type: "creator",
@@ -162,7 +162,7 @@ function App() {
     },
     {
       title: 'Ocean',
-      description: 'This guitar design was inspired by my love for my partner and for the ocean, so I combined them in this composition.',
+      description: 'This guitar design was inspired by my love for my partner and for the ocean.',
       medium: 'Acrylic Paint',
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/p49_orig.png',
       type: "creator",
@@ -208,11 +208,11 @@ function App() {
       </header>
       <main>
       <Routes> 
-          <Route exact path="/"  /> 
+          <Route exact path="/" element={<Home/>} /> 
            {/* <Route exact path="/projects" component={Projects} />  */}
            {/* <Route path="/projects/:projectId" component={ProjectDetailPage} /> */}
-           <Route path='/home' component={<Home/>}/>
-           <Route path="/:projectId" component={ <DevCard
+          
+           <Route path="/project/:projectId" element={ <DevCard
             creProjects={creProjects}
             devProjects={devProjects}
             desProjects={desProjects}

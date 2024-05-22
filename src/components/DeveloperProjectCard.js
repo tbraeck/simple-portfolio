@@ -6,7 +6,7 @@ const DeveloperProjectCard = ({ title, description, videoUrl, githubUrl, project
   return (
     <div className={`developer-project-card`}>
       <h3 className="developer-project-title">{title}</h3>
-      <p className="developer-project-description"  numberOfLines={1}>{description}</p>
+      <p className="developer-project-description"  >{description}</p>
       <div className="developer-video-container">
         <video className="developer-project-video" src={videoUrl} controls></video>
       </div>
