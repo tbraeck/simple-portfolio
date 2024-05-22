@@ -20,7 +20,7 @@
   position: relative;
   width: 100%;
   max-width: 350px;
-  background-color: #c7c6c6;
+  background-color: rgba(199, 198, 198, 0.1);
   border: 1px solid #ccc;
   border-radius: 20px;
   margin: 20px auto; /* Center the card horizontally */
@@ -34,7 +34,6 @@
   justify-content: center;
   text-align: center; 
   margin: 15px;
-  /* opacity: .8; */
 
 }
 
@@ -42,6 +41,7 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transform: scale(1.1);
   animation: moveLeft 0.2s forwards;
+ color: rgb(251, 251, 251);
   z-index: 5;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .design-project-card .content {
-  padding: 30px; /* Increase padding inside the card */
+  padding: 30px; 
 }
 
 .design-project-card h3 {
@@ -72,9 +72,9 @@ display: -webkit-box;
 
 .design-project-card .project-links {
   display: flex;
-  justify-content: center; /* Center links */
-  width: calc(100% - 40px); /* Ensure links span the full width with padding from edges */
-  padding: 20px; /* Add padding from the edges */
+  justify-content: center; 
+  width: calc(100% - 40px); 
+  padding: 20px; 
 }
 
 .design-project-card .project-links a {
@@ -88,9 +88,10 @@ display: -webkit-box;
   color: #f9f4f4;
 }
 
-.design-break{
+.design-break {
   background-color: rgba(170, 51, 106, 0.5); 
   height: 3px;
-  width: full;
-  z-index: 5; 
+  width: 60%; /* Ensures the break spans the full width */
+  margin: 10px 0; /* Adds some space around the break */
 }
+
