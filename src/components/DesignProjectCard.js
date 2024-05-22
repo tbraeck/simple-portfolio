@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Button } from '@mui/material';
 import './DesignProjectCard.css'; // Import CSS file
 
 const DesignProjectCard = ({ projectId, title, description, medium, imageUrl }) => {
@@ -15,6 +15,7 @@ const DesignProjectCard = ({ projectId, title, description, medium, imageUrl }) 
   };
 
   return (
+    <a className="details-link" href={imageUrl} target="_blank" rel="noopener noreferrer">
     <div className="design-project-card" style={{ backgroundColor: hovered ? getRandomColor() : '#fff' }} onMouseEnter={handleHover} onMouseLeave={handleHover}>
      <div className="image-container">
         <img className="project-video" alt='' src={imageUrl}/>
@@ -22,12 +23,13 @@ const DesignProjectCard = ({ projectId, title, description, medium, imageUrl }) 
       <h3>{title}</h3>
       <div className='design-break'></div>
       <p>{description}</p>
+      <Button variant='outlined' size='large'>
+        DETAILS
+      </Button>
       <div className="project-links">
-        <Link className="details-link" to={`/projects/${projectId}`}>
-          {/* View Details */}
-        </Link>
       </div>
     </div>
+    </a>
   );
 };
 
