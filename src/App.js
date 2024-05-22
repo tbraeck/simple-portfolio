@@ -302,7 +302,7 @@ function App() {
     fontSize: "100px",
     opacity: "0.7",
     zIndex: "10",
-    marginRight: "55px"
+    marginRight: "25px"
 
   }}
   >
