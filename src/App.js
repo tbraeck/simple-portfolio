@@ -210,7 +210,7 @@ function App() {
           <Route exact path="/"  /> 
            {/* <Route exact path="/projects" component={Projects} />  */}
            {/* <Route path="/projects/:projectId" component={ProjectDetailPage} /> */}
-           <Route path="/projects/:type/:projectId" component={ <DevCard
+           <Route path="/:projectId" component={ <DevCard
             creProjects={creProjects}
             devProjects={devProjects}
             desProjects={desProjects}
