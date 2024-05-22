@@ -4,6 +4,7 @@ import DesignProjectCard from './components/DesignProjectCard';
 import DeveloperProjectCard from './components/DeveloperProjectCard';
 import CreatorProjectCard from './components/CreatorProjectCard';
 import AboutSection from './components/AboutSection';
+import Home from './components/Home';
 import { AboutProvider } from './contexts/AboutContext';
 // import ProjectDetailPage from './ProjectDetailPage';
 import { Routes, Route } from 'react-router-dom';
@@ -210,6 +211,7 @@ function App() {
           <Route exact path="/"  /> 
            {/* <Route exact path="/projects" component={Projects} />  */}
            {/* <Route path="/projects/:projectId" component={ProjectDetailPage} /> */}
+           <Route path='/home' component={<Home/>}/>
            <Route path="/:projectId" component={ <DevCard
             creProjects={creProjects}
             devProjects={devProjects}
