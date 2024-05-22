@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import './CreatorProjectCard.css'; // Import CSS file for styles
-
+import './CreatorProjectCard.css'; 
 const CreatorProjectCard = ({ projectId, title, medium, description, imageUrl, project}) => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <Link to={`/project/${projectId}`} className="project-link"> {/* Use Link with dynamic path */}
+    <a className="details-link" href={imageUrl} target="_blank" rel="noopener noreferrer">
       <div
         className="creator-project-card"
         onMouseEnter={() => setHovered(true)}
@@ -21,7 +19,7 @@ const CreatorProjectCard = ({ projectId, title, medium, description, imageUrl, p
           </div>
         )}
       </div>
-    </Link>
+    </a>
   );
 };
 

@@ -23,8 +23,8 @@ const DesignProjectCard = ({ projectId, title, description, medium, imageUrl }) 
       <h3>{title}</h3>
       <div className='design-break'></div>
       <p>{description}</p>
-      <Button variant='outlined' size='large'>
-        DETAILS
+      <Button variant='outlined' size='large' >
+        MORE
       </Button>
       <div className="project-links">
       </div>

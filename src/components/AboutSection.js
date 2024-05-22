@@ -4,10 +4,10 @@ import { useAboutContext } from '../contexts/AboutContext';
 import './AboutSection.css';
 
 const AboutSection = () => {
-  // Consume the context
   const aboutData = useAboutContext();
 
   return (
+    
     <div className="about-content" style={{ backgroundColor: "rgba(204, 204, 204, 0.5)", textAlign: "left", verticalAlign: "middle", padding: "40px", borderRadius: "30px" }}>
       <p className="about-description">{aboutData.description}</p>
       <div className="tech-skills" style={{ backgroundColor: "rgba(204, 204, 204, 0.5)", textAlign: "center", verticalAlign: "middle", padding: "40px", borderRadius: "30px" }}>
