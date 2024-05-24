@@ -18,7 +18,7 @@ const DesignProjectCard = ({ projectId, title, description, medium, imageUrl }) 
     <a className="details-link" href={imageUrl} target="_blank" rel="noopener noreferrer">
     <div className="design-project-card" style={{ backgroundColor: hovered ? getRandomColor() : '#fff' }} onMouseEnter={handleHover} onMouseLeave={handleHover}>
      <div className="image-container">
-        <img className="project-video" alt='' src={imageUrl}/>
+        <img className="project-video"  src={`${process.env.PUBLIC_URL}/shirt.jpeg`} alt="School Product Design" />
       </div>
       <h3>{title}</h3>
       <div className='design-break'></div>

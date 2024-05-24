@@ -9,6 +9,8 @@ import { AboutProvider } from './contexts/AboutContext';
 // import ProjectDetailPage from './ProjectDetailPage';
 import { Routes, Route } from 'react-router-dom';
 
+
+
 // import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 import './styles.css';
 import DevCard from './components/DevCard';
@@ -89,7 +91,7 @@ function App() {
       title: 'School Product Design',
       description: 'Designed multiple products and logos for numerous international schools.',
       medium: 'Digital',
-      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/international-day-shirt-1-black-text-alter-1_orig.jpg',
+      imageUrl: './public/shirt.jpeg',
       type: "designer",
       projectId: 4
     },
@@ -97,7 +99,7 @@ function App() {
       title: 'Shirt Logo Design',
       description: 'Shirt design for online sales. Product displayed on Zazzle.',
       medium: 'Digital',
-      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/silly-kitty-rainbows-design-canva_orig.png',
+      imageUrl:  `${process.env.PUBLIC_URL}/shirt.jpeg`,
       type: "designer",
       projectId: 5
     },
