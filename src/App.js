@@ -8,7 +8,9 @@ import Home from './components/Home';
 import { AboutProvider } from './contexts/AboutContext';
 // import ProjectDetailPage from './ProjectDetailPage';
 import { Routes, Route } from 'react-router-dom';
-
+import shirtImage from './assets/shirt.jpeg';
+import kittyImage from './assets/kitty.jpeg';
+import kftShirtImage from './assets/kft-shirt.png';
 
 
 // import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
@@ -91,7 +93,8 @@ function App() {
       title: 'School Product Design',
       description: 'Designed multiple products and logos for numerous international schools.',
       medium: 'Digital',
-      imageUrl: './public/shirt.jpeg',
+      image: shirtImage,
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/international-day-shirt-1-black-text-alter-1_orig.jpg',
       type: "designer",
       projectId: 4
     },
@@ -99,7 +102,8 @@ function App() {
       title: 'Shirt Logo Design',
       description: 'Shirt design for online sales. Product displayed on Zazzle.',
       medium: 'Digital',
-      imageUrl:  `${process.env.PUBLIC_URL}/shirt.jpeg`,
+      image: kittyImage,
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/rainbow-diamond_orig.jpg',
       type: "designer",
       projectId: 5
     },
@@ -107,6 +111,7 @@ function App() {
       title: 'Crossfit Apparel Design',
       description: 'Shirt design for KFT Brands Apparel Company.',
       medium: 'Digital',
+      image: kftShirtImage,
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/untitled-design-18_orig.png',
       type: "designer",
       projectId: 6
