@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './CreatorProjectCard.css'; 
-const CreatorProjectCard = ({ projectId, title, medium, description, imageUrl, project}) => {
+const CreatorProjectCard = ({ projectId, title, medium, description, image, imageUrl, project}) => {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -10,7 +10,7 @@ const CreatorProjectCard = ({ projectId, title, medium, description, imageUrl, p
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
-        <img src={imageUrl} alt={title} />
+        <img src={image} alt={title} />
         {hovered && (
           <div className="overlay">
             <h3>{title}</h3>

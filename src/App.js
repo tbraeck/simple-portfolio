@@ -11,7 +11,14 @@ import { Routes, Route } from 'react-router-dom';
 import shirtImage from './assets/shirt.jpeg';
 import kittyImage from './assets/kitty.jpeg';
 import kftShirtImage from './assets/kft-shirt.png';
-
+import heartBrain from './assets/heart-and-brain.png';
+import wcysi from './assets/wcysi.jpeg';
+import onFire from './assets/on-fire.png';
+import homeImg from './assets/home.png';
+import agua from './assets/agua.png';
+import dayOfDead from './assets/diademuertos.jpeg';
+import selfPortrait from './assets/self-portrait.png';
+import ocean from './assets/ocean.png';
 
 // import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 import './styles.css';
@@ -123,6 +130,7 @@ function App() {
       title: "Why Can't You See It?",
       description: "Illustrated children's book using hand-drawn art, Adobe Photoshop, and Adobe In-Design",
       medium: 'Pen & Ink | Digital',
+      image: wcysi,
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/wcysi-cover_orig.jpg',
       type: "creator",
       projectId: 7
@@ -131,6 +139,7 @@ function App() {
       title: 'Heart and Brain',
       description: 'Illustration about how our minds and our hearts are always connected.',
       medium: 'Pencil | Ink',
+      image: heartBrain,
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/heart-and-brain_orig.png',
       type: "creator",
       projectId: 8
@@ -139,6 +148,7 @@ function App() {
       title: 'On Fire',
       description: 'An illustration using line and shape to create a stylized depiction of a woman who embodies power.',
       medium: 'Pencil | Ink | Digital',
+      image: onFire,
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/on-fire-hair-extensions-portfolio_orig.png',
       type: "creator",
       projectId: 9
@@ -147,6 +157,7 @@ function App() {
       title: 'Agua',
       description: "This illustration was inspired by humanity's constant struggle. ",
       medium: 'Digital',
+      image: agua,
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/agua-color-1_orig.png',
       type: "creator",
       projectId: 10
@@ -155,6 +166,7 @@ function App() {
       title: 'Dia de Muertos',
       description: 'This guitar design was inspired by my love for Mexican traditional art. ',
       medium: 'Acrylic Paint',
+      image: dayOfDead,
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/dia-muertos_orig.jpeg',
       type: "creator",
       projectId: 11
@@ -163,6 +175,7 @@ function App() {
       title: 'Home in Utah',
       description: 'This was commission piece done for a Realtor client for her own client.',
       medium: 'Pencil',
+      image: homeImg,
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/p27_orig.png',
       type: "creator",
       projectId: 12
@@ -171,6 +184,7 @@ function App() {
       title: 'Ocean',
       description: 'This guitar design was inspired by my love for my partner and for the ocean.',
       medium: 'Acrylic Paint',
+      image: ocean,
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/p49_orig.png',
       type: "creator",
       projectId: 13
@@ -179,6 +193,7 @@ function App() {
       title: 'Self-Portrait',
       description: 'This is self-portrait I did many years ago.',
       medium: 'Ink on Paper',
+      image: selfPortrait,
       imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/selfie-pen_orig.png',
       type: "creator",
       projectId: 14
