@@ -6,7 +6,7 @@ const DesignProjectCard = ({ projectId, title, description, medium, imageUrl, im
   const [hovered, setHovered] = useState(false);
 
   const getRandomColor = () => {
-    const colors = ['#f9b685', '#8ac6d1', '#e4a9a1', '#b8b8b8', '#f2d49b']; // Add more colors if needed
+    const colors = ['#f9b685', '#8ac6d1', '#e4a9a1', '#b8b8b8', '#f2d49b']; 
     return colors[Math.floor(Math.random() * colors.length)];
   };
   

@@ -1,7 +1,5 @@
-// ScrollToTopButton.js
-
 import React from 'react';
-import './ScrollToTopButton.css'; // Import CSS file for styles
+import './ScrollToTopButton.css'; 
 
 const ScrollToTopButton = ({ onClick }) => {
   const scrollToTop = () => {
@@ -9,7 +7,7 @@ const ScrollToTopButton = ({ onClick }) => {
       top: 0,
       behavior: 'smooth',
     });
-    onClick(); // Call the onClick function passed as a prop
+    onClick(); 
   };
 
   return (

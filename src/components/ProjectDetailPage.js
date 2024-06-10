@@ -1,20 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { useParams, Link } from 'react-router-dom'; 
 
 const ProjectDetailPage = () => {
-  const { projectId } = useParams(); // Assuming you are using React Router for navigation
+  const { projectId } = useParams(); 
   const [project, setProject] = useState(null);
 console.log(projectId)
   useEffect(() => {
-    // Fetch project details based on the projectId
-    // Example fetch request:
     fetchProjectDetails(projectId);
   }, [projectId]);
 
   const fetchProjectDetails = async (projectId) => {
     try {
-      // Make a fetch request to fetch project details using the projectId
-      const response = await fetch(`http://localhost:3000/projects/${projectId}`); // Adjust the API endpoint as needed
+      const response = await fetch(`http://localhost:3000/projects/${projectId}`); 
       if (!response.ok) {
         throw new Error('Failed to fetch project details');
       }
@@ -26,7 +23,7 @@ console.log(projectId)
   };
 
   if (!project) {
-    return <div>Loading...</div>; // Render loading state while fetching project details
+    return <div>Loading...</div>; 
   }
 
   return (
@@ -36,7 +33,7 @@ console.log(projectId)
       <h1>{project.title}</h1>
       <p>{project.description}</p>
       <video src={project.videoUrl} controls></video>
-      <Link to={project.githubUrl} target="_blank">GitHub</Link> {/* Use Link component */}
+      <Link to={project.githubUrl} target="_blank">GitHub</Link> 
     </div>
   );
 };

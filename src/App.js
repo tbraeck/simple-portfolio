@@ -19,11 +19,8 @@ import agua from './assets/agua.png';
 import dayOfDead from './assets/diademuertos.jpeg';
 import selfPortrait from './assets/self-portrait.png';
 import ocean from './assets/ocean.png';
-
-// import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 import './styles.css';
 import DevCard from './components/DevCard';
-// import AnimationVideoS1 from './components/AnimationVideoS1'; // Import the AnimationVideoS1 component
 
 const ProjectsContext = createContext([]);
 
@@ -231,33 +228,28 @@ function App() {
       <main>
       <Routes> 
           <Route exact path="/" element={<Home/>} /> 
-           {/* <Route exact path="/projects" component={Projects} />  */}
-           {/* <Route path="/projects/:projectId" component={ProjectDetailPage} /> */}
-          
-           <Route path="/project/:projectId" element={ <DevCard
+          <Route path="/project/:projectId" element={ <DevCard
             creProjects={creProjects}
             devProjects={devProjects}
             desProjects={desProjects}
             />}>
-        </Route>      
-        </Routes>
-        {/* <AnimationVideoS1 />  */}
+          </Route>      
+      </Routes>
         <ProjectsContext.Provider value={devProjects}>
           <Section sectionRef={developerRef} sectionClass="developer">
           <h1 style={{   
-      // padding: "30px 0 0 30px",
-      fontFamily: "Changa, sans-serif",
-      fontOpticalSizing: "auto",
-      fontWeight: 350,
-      color: "#8ecae6",
-      fontStyle: "normal",
-      fontSize: "100px",
-      opacity: "0.75",
-      marginRight: "65px"
-    }}
-    >
-      DEVELOPER
-    </h1>
+            fontFamily: "Changa, sans-serif",
+            fontOpticalSizing: "auto",
+            fontWeight: 350,
+            color: "#8ecae6",
+            fontStyle: "normal",
+            fontSize: "100px",
+            opacity: "0.75",
+            marginRight: "65px"
+          }}
+          >
+            DEVELOPER
+          </h1>
             {devProjects.map((project, index) => (
               <DeveloperProjectCard key={index} {...project} />
             ))}
@@ -266,76 +258,73 @@ function App() {
         <div >
 
         <ProjectsContext.Provider value={desProjects}>
-  <Section sectionRef={designerRef} sectionClass="designer">
-    <h1 style={{   
-      paddingLeft: "30px",
-      fontFamily: "Changa, sans-serif",
-      fontOpticalSizing: "auto",
-      fontWeight: 350,
-      color: "#b56576",
-      fontStyle: "normal",
-      fontSize: "100px",
-      opacity: "0.75",
-      marginRight: "65px"
+          <Section sectionRef={designerRef} sectionClass="designer">
+            <h1 style={{   
+              paddingLeft: "30px",
+              fontFamily: "Changa, sans-serif",
+              fontOpticalSizing: "auto",
+              fontWeight: 350,
+              color: "#b56576",
+              fontStyle: "normal",
+              fontSize: "100px",
+              opacity: "0.75",
+              marginRight: "65px"
 
-    }}
-    >
-      DESIGNER
-    </h1>
-    {desProjects.map((project, index) => (
-      <DesignProjectCard key={index} {...project} />
-    ))}
-  </Section>
-</ProjectsContext.Provider>
-</div>
-<div >
-<Section  sectionRef={creatorRef} sectionClass="creator">
+            }}
+            >
+              DESIGNER
+            </h1>
+            {desProjects.map((project, index) => (
+              <DesignProjectCard key={index} {...project} />
+            ))}
+          </Section>
+      </ProjectsContext.Provider>
+    </div>
+    <div>
+      <Section  sectionRef={creatorRef} sectionClass="creator">
         <h1 style={{   
-      // padding: "0px 0 0 0px",
-      fontFamily: "Changa, sans-serif",
-      fontOpticalSizing: "auto",
-      fontWeight: 350,
-      color: "#0c61d8",
-      fontStyle: "normal",
-      fontSize: "100px",
-      opacity: "0.75",
-      zIndex: "10",
-      marginLeft: "55px"
+          fontFamily: "Changa, sans-serif",
+          fontOpticalSizing: "auto",
+          fontWeight: 350,
+          color: "#0c61d8",
+          fontStyle: "normal",
+          fontSize: "100px",
+          opacity: "0.75",
+          zIndex: "10",
+          marginLeft: "55px"
 
-    }}
-    >
-      CREATOR
-    </h1> 
+        }}
+        >
+          CREATOR
+        </h1> 
           {creProjects.map((project, index) => (
             <CreatorProjectCard key={index} {...project} />
           ))}
         </Section>
-</div>
+    </div>
         
         <Section sectionRef={aboutRef} sectionClass="about">
-  <div>
-  <h1 style={{   
-    // padding: "30px 0 0 30px",
-    fontFamily: "Changa, sans-serif",
-    fontOpticalSizing: "auto",
-    fontWeight: 350,
-    color: "#AA336A",
-    fontStyle: "normal",
-    fontSize: "100px",
-    opacity: "0.7",
-    zIndex: "10",
-    marginRight: "25px"
-
-  }}
-  >
-    ABOUT
-  </h1>
-  </div>
+          <div>
+            <h1 style={{   
+              fontFamily: "Changa, sans-serif",
+              fontOpticalSizing: "auto",
+              fontWeight: 350,
+              color: "#AA336A",
+              fontStyle: "normal",
+              fontSize: "100px",
+              opacity: "0.7",
+              zIndex: "10",
+              marginRight: "25px"
+            }}
+            >
+              ABOUT
+            </h1>
+          </div>
   
-  <AboutProvider>
-    <AboutSection />
-  </AboutProvider>
-</Section>
+        <AboutProvider>
+          <AboutSection />
+        </AboutProvider>
+    </Section>
       </main>
       {showScrollButton && <ScrollToTopButton onClick={() => setShowScrollButton(false)} />}
       <footer>

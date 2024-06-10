@@ -3,10 +3,10 @@
   width: 300px;
   height: 300px;
   overflow: hidden;
-  transition: transform 0.3s ease; /* Add transition for smooth scaling */
-  border-radius: 10px; /* Rounded corners */
-  margin: 20px; /* Add margin around the card */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light box shadow for depth */
+  transition: transform 0.3s ease; 
+  border-radius: 10px; 
+  margin: 20px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .creator-project-card img {
@@ -17,7 +17,7 @@
 
 .creator-project-card .overlay {
   position: absolute;
-  bottom: 0; /* Position the overlay at the bottom */
+  bottom: 0; 
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -26,11 +26,11 @@
   flex-direction: column;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.3s ease; /* Add transition for smooth opacity */
+  transition: opacity 0.3s ease; 
 }
 
 .creator-project-card:hover .overlay {
-  opacity: 1; /* Make the overlay visible on hover */
+  opacity: 1; 
 }
 
 .creator-project-card .overlay-content {

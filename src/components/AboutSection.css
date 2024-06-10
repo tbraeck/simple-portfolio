@@ -65,7 +65,6 @@
 .tech-skill:hover {
   color: #fdfbfb;
   cursor: pointer;
-  /* font-weight: bold; */
 }
 
 .tech-skills-break{
@@ -103,7 +102,6 @@
 .soft-skill:hover {
   color: #fdfbfb;
   cursor: pointer;
-  /* font-weight: bold; */
 }
 
 .soft-skills-break{
@@ -141,7 +139,6 @@
 .link-item  :hover {
   color: #8b179a;
   cursor: pointer;
-  /* font-weight: bold; */
 }
 
 .links-break{
