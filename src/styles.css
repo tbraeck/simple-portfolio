@@ -70,11 +70,11 @@ nav ul li button:hover {
   margin-top: 50px; /* Adjust the top margin of the section title */
 }
 
-.developer {
-  background-image: url("/public/water_bg.jpg");
-    background-repeat: no-repeat;
-    background-size:   cover;
-}
+  .developer {
+    background-image: url("/public/water_bg.jpg");
+      background-repeat: no-repeat;
+      background-size:   cover;
+  }
 
 .designer {
   background-image: url("/public/blue_bg.jpg");
