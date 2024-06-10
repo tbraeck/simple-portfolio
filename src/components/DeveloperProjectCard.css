@@ -35,10 +35,10 @@
 }
 
 .developer-project-card:hover {
-  background-color: rgba(248, 249, 250, 0.7); /* Change the opacity on hover */
+  background-color: rgba(248, 249, 250, 0.7); 
   animation: curveUpLeft 0.2s forwards;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  color: #98509e; /* Change text color on hover */
+  color: #98509e; 
   opacity: 1.0;
 
 }

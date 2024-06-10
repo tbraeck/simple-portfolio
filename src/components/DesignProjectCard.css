@@ -91,7 +91,7 @@ display: -webkit-box;
 .design-break {
   background-color: rgba(170, 51, 106, 0.5); 
   height: 3px;
-  width: 60%; /* Ensures the break spans the full width */
-  margin: 10px 0; /* Adds some space around the break */
+  width: 60%; 
+  margin: 10px 0; 
 }
 
