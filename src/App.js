@@ -182,7 +182,7 @@ function App() {
       description: 'This guitar design was inspired by my love for my partner and for the ocean.',
       medium: 'Acrylic Paint',
       image: ocean,
-      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/p49_orig.png',
+      imageUrl: 'http://www.tatebraeckelart.com/uploads/1/7/8/7/17870845/seascape-1_orig.png',
       type: "creator",
       projectId: 13
     },
